@@ -1,0 +1,2174 @@
+[
+  {
+    "op": "add",
+    "path": "/ValueTypes",
+    "value": {
+      "Affinity": {
+        "AllowedValues": [
+          "default",
+          "host"
+        ]
+      },
+      "AllocationId": {
+        "GetAtt": {
+          "AWS::EC2::EIP": "AllocationId"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "AmazonMQDeploymentMode": {
+        "AllowedValues": [
+          "ACTIVE_STANDBY_MULTI_AZ",
+          "SINGLE_INSTANCE"
+        ]
+      },
+      "AmazonMQEngineType": {
+        "AllowedValues": [
+          "ACTIVEMQ"
+        ]
+      },
+      "AmazonMQEngineVersion": {
+        "AllowedValues": [
+          "5.15.0",
+          "5.15.6",
+          "5.15.8",
+          "5.15.9"
+        ]
+      },
+      "AmazonMQHostInstanceType": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "ApiGatewatRestApiKeySourceType": {
+        "AllowedValues": [
+          "AUTHORIZER",
+          "HEADER"
+        ]
+      },
+      "ApiGatewayAuthorizerType": {
+        "AllowedValues": [
+          "COGNITO_USER_POOLS",
+          "REQUEST",
+          "TOKEN"
+        ]
+      },
+      "ApiGatewayResponeType": {
+        "AllowedValues": [
+          "ACCESS_DENIED",
+          "API_CONFIGURATION_ERROR",
+          "AUTHORIZER_FAILURE",
+          "AUTHORIZER_CONFIGURATION_ERROR",
+          "BAD_REQUEST_PARAMETERS",
+          "BAD_REQUEST_BODY",
+          "DEFAULT_4XX",
+          "DEFAULT_5XX",
+          "EXPIRED_TOKEN",
+          "INVALID_SIGNATURE",
+          "INTEGRATION_FAILURE",
+          "INTEGRATION_TIMEOUT",
+          "INVALID_API_KEY",
+          "MISSING_AUTHENTICATION_TOKEN",
+          "QUOTA_EXCEEDED",
+          "REQUEST_TOO_LARGE",
+          "RESOURCE_NOT_FOUND",
+          "THROTTLED",
+          "UNAUTHORIZED",
+          "UNSUPPORTED_MEDIA_TYPE"
+        ]
+      },
+      "ApiGatewayUsagePlanKeyType": {
+        "AllowedValues": [
+          "API_KEY"
+        ]
+      },
+      "AppSyncDataSourceType": {
+        "AllowedValues": [
+          "AMAZON_DYNAMODB",
+          "AMAZON_ELASTICSEARCH",
+          "AWS_LAMBDA",
+          "HTTP",
+          "NONE",
+          "RELATIONAL_DATABASE"
+        ]
+      },
+      "AppSyncGraphQLApiAuthType": {
+        "AllowedValues": [
+          "AMAZON_COGNITO_USER_POOLS",
+          "API_KEY",
+          "AWS_IAM",
+          "OPENID_CONNECT"
+        ]
+      },
+      "AppSyncResolverKind": {
+        "AllowedValues": [
+          "PIPELINE",
+          "UNIT"
+        ]
+      },
+      "ApplicationAutoScalingPolicyType": {
+        "AllowedValues": [
+          "StepScaling",
+          "TargetTrackingScaling"
+        ]
+      },
+      "ApplicationAutoScalingPredefinedMetricSpecificationType": {
+        "AllowedValues": [
+          "ALBRequestCountPerTarget",
+          "DynamoDBReadCapacityUtilization",
+          "DynamoDBWriteCapacityUtilization",
+          "EC2SpotFleetRequestAverageCPUUtilization",
+          "EC2SpotFleetRequestAverageNetworkIn",
+          "EC2SpotFleetRequestAverageNetworkOut",
+          "ECSServiceAverageCPUUtilization",
+          "ECSServiceAverageMemoryUtilization",
+          "RDSReaderAverageCPUUtilization",
+          "RDSReaderAverageDatabaseConnections",
+          "SageMakerVariantInvocationsPerInstance"
+        ]
+      },
+      "AutoScalingGroupHealthCheckType": {
+        "AllowedValues": [
+          "EC2",
+          "ELB"
+        ]
+      },
+      "AutoScalingLifecycleHookResult": {
+        "AllowedValues": [
+          "ABANDON",
+          "CONTINUE"
+        ]
+      },
+      "AutoScalingLifecycleTransition": {
+        "AllowedValues": [
+          "autoscaling:EC2_INSTANCE_LAUNCHING",
+          "autoscaling:EC2_INSTANCE_TERMINATING"
+        ]
+      },
+      "AutoScalingPolicyAdjustmentType": {
+        "AllowedValues": [
+          "ChangeInCapacity",
+          "ExactCapacity",
+          "PercentChangeInCapacity"
+        ]
+      },
+      "AutoScalingPolicyMetricAggregationType": {
+        "AllowedValues": [
+          "Average",
+          "Maximum",
+          "Minimum"
+        ]
+      },
+      "AutoScalingPolicyType": {
+        "AllowedValues": [
+          "SimpleScaling",
+          "StepScaling",
+          "TargetTrackingScaling"
+        ]
+      },
+      "AvailabilityZone": {
+        "GetAtt": {
+          "AWS::EC2::Instance": "AvailabilityZone",
+          "AWS::EC2::Subnet": "AvailabilityZone",
+          "AWS::OpsWorks::Instance": "AvailabilityZone"
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "AvailabilityZone"
+          ]
+        }
+      },
+      "AvailabilityZones": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings",
+            "AvailabilityZones"
+          ]
+        }
+      },
+      "BudgetDataBudgetType": {
+        "AllowedValues": [
+          "COST",
+          "RI_COVERAGE",
+          "RI_UTILIZATION",
+          "USAGE"
+        ]
+      },
+      "BudgetDataTimeUnit": {
+        "AllowedValues": [
+          "ANNUALLY",
+          "DAILY",
+          "MONTHLY",
+          "QUARTERLY"
+        ]
+      },
+      "BudgetNotificationComparisonOperator": {
+        "AllowedValues": [
+          "EQUAL_TO",
+          "GREATER_THAN",
+          "LESS_THAN"
+        ]
+      },
+      "BudgetNotificationNotificationType": {
+        "AllowedValues": [
+          "ACTUAL",
+          "FORECASTED"
+        ]
+      },
+      "BudgetNotificationThreshold": {
+        "NumberMax": 1000000000,
+        "NumberMin": 0.1
+      },
+      "BudgetNotificationThresholdType": {
+        "AllowedValues": [
+          "ABSOLUTE_VALUE",
+          "PERCENTAGE"
+        ]
+      },
+      "BudgetSubscriptionType": {
+        "AllowedValues": [
+          "EMAIL",
+          "SNS"
+        ]
+      },
+      "CertificateValidationMethod": {
+        "AllowedValues": [
+          "DNS",
+          "EMAIL"
+        ]
+      },
+      "CidrIp": {
+        "AllowedPattern": "x.x.x.x/y",
+        "AllowedPatternRegex": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(/([0-9]|[1-2][0-9]|3[0-2]))$"
+      },
+      "CloudFrontCacheBehaviourViewerProtocolPolicy": {
+        "AllowedValues": [
+          "allow-all",
+          "https-only",
+          "redirect-to-https"
+        ]
+      },
+      "CloudFrontCustomErrorResponsesErrorCode": {
+        "AllowedValues": [
+          "400",
+          "403",
+          "404",
+          "405",
+          "414",
+          "500",
+          "501",
+          "502",
+          "503",
+          "504"
+        ]
+      },
+      "CloudFrontCustomErrorResponsesResponseCode": {
+        "AllowedValues": [
+          "200",
+          "400",
+          "403",
+          "404",
+          "405",
+          "414",
+          "500",
+          "501",
+          "502",
+          "503",
+          "504"
+        ]
+      },
+      "CloudFrontGeoRestrictionType": {
+        "AllowedValues": [
+          "blacklist",
+          "none",
+          "whitelist"
+        ]
+      },
+      "CloudFrontHttpVersion": {
+        "AllowedValues": [
+          "http1.1",
+          "http2"
+        ]
+      },
+      "CloudFrontLambdaFunctionAssociationsEventType": {
+        "AllowedValues": [
+          "origin-request",
+          "origin-response",
+          "viewer-request",
+          "viewer-response"
+        ]
+      },
+      "CloudFrontOriginProtocolPolicy": {
+        "AllowedValues": [
+          "http-only",
+          "https-only",
+          "match-viewer"
+        ]
+      },
+      "CloudFrontOriginSSLProtocols": {
+        "AllowedValues": [
+          "SSLv3",
+          "TLSv1.1",
+          "TLSv1.2",
+          "TLSv1"
+        ]
+      },
+      "CloudFrontPriceClass": {
+        "AllowedValues": [
+          "PriceClass_100",
+          "PriceClass_200",
+          "PriceClass_All"
+        ]
+      },
+      "CloudFrontViewerCertificateMinimumProtocolVersion": {
+        "AllowedValues": [
+          "SSLv3",
+          "TLSv1",
+          "TLSv1_2016",
+          "TLSv1.1_2016",
+          "TLSv1.2_2018"
+        ]
+      },
+      "CloudFrontViewerCertificateSSLSupportMethod": {
+        "AllowedValues": [
+          "sni-only",
+          "vip"
+        ]
+      },
+      "CloudTrailEventSelectorDataResourceType": {
+        "AllowedValues": [
+          "AWS::Lambda::Function",
+          "AWS::S3::Object"
+        ]
+      },
+      "CloudTrailEventSelectorReadWriteType": {
+        "AllowedValues": [
+          "All",
+          "ReadOnly",
+          "WriteOnly"
+        ]
+      },
+      "CloudWatchAlarmAction": {
+        "StringMax": 1024,
+        "StringMin": 1
+      },
+      "CloudWatchAlarmActions": {
+        "ListMax": 5,
+        "ListMin": 0
+      },
+      "CloudWatchAlarmComparisonOperator": {
+        "AllowedValues": [
+          "GreaterThanOrEqualToThreshold",
+          "GreaterThanThreshold",
+          "LessThanOrEqualToThreshold",
+          "LessThanThreshold"
+        ]
+      },
+      "CloudWatchAlarmStatistic": {
+        "AllowedValues": [
+          "Average",
+          "Maximum",
+          "Minimum",
+          "SampleCount",
+          "Sum"
+        ]
+      },
+      "CloudWatchAlarmTreatMissingData": {
+        "AllowedValues": [
+          "breaching",
+          "ignore",
+          "missing",
+          "notBreaching"
+        ]
+      },
+      "CloudWatchAlarmUnit": {
+        "AllowedValues": [
+          "Bits",
+          "Bits/Second",
+          "Bytes",
+          "Bytes/Second",
+          "Count",
+          "Count/Second",
+          "Gigabits",
+          "Gigabits/Second",
+          "Gigabytes",
+          "Gigabytes/Second",
+          "Kilobits",
+          "Kilobits/Second",
+          "Kilobytes",
+          "Kilobytes/Second",
+          "Megabits",
+          "Megabits/Second",
+          "Megabytes",
+          "Megabytes/Second",
+          "Microseconds",
+          "Milliseconds",
+          "None",
+          "Percent",
+          "Seconds",
+          "Terabits",
+          "Terabits/Second",
+          "Terabytes",
+          "Terabytes/Second"
+        ]
+      },
+      "CloudWatchEventBusPolicyAction": {
+        "AllowedValues": [
+          "events:PutEvents"
+        ]
+      },
+      "CloudWatchEventBusPolicyConditionKey": {
+        "AllowedValues": [
+          "aws:PrincipalOrgID"
+        ]
+      },
+      "CloudWatchEventBusPolicyConditionType": {
+        "AllowedValues": [
+          "StringEquals"
+        ]
+      },
+      "CloudWatchLogGroupName": {
+        "StringMax": 512,
+        "StringMin": 1
+      },
+      "CloudWatchLogGroupRetention": {
+        "AllowedValues": [
+          "1",
+          "3",
+          "5",
+          "7",
+          "14",
+          "30",
+          "60",
+          "90",
+          "120",
+          "150",
+          "180",
+          "365",
+          "400",
+          "545",
+          "731",
+          "1827",
+          "3653"
+        ]
+      },
+      "CodeBuildArtifactPackaging": {
+        "AllowedValues": [
+          "NONE",
+          "ZIP"
+        ]
+      },
+      "CodeBuildArtifactType": {
+        "AllowedValues": [
+          "CODEPIPELINE",
+          "NO_ARTIFACTS",
+          "S3"
+        ]
+      },
+      "CodeBuildCacheType": {
+        "AllowedValues": [
+          "LOCAL",
+          "NO_CACHE",
+          "S3"
+        ]
+      },
+      "CodeBuildEnvironmentComputeType": {
+        "AllowedValues": [
+          "BUILD_GENERAL1_LARGE",
+          "BUILD_GENERAL1_MEDIUM",
+          "BUILD_GENERAL1_SMALL"
+        ]
+      },
+      "CodeBuildEnvironmentCredentialsType": {
+        "AllowedValues": [
+          "CODEBUILD",
+          "SERVICE_ROLE"
+        ]
+      },
+      "CodeBuildEnvironmentType": {
+        "AllowedValues": [
+          "LINUX_CONTAINER",
+          "WINDOWS_CONTAINER"
+        ]
+      },
+      "CodeBuildSourceType": {
+        "AllowedValues": [
+          "BITBUCKET",
+          "CODECOMMIT",
+          "CODEPIPELINE",
+          "GITHUB",
+          "GITHUB_ENTERPRISE",
+          "NO_SOURCE",
+          "S3"
+        ]
+      },
+      "CodeCommitEvent": {
+        "AllowedValues": [
+          "all",
+          "createReference",
+          "deleteReference",
+          "updateReference"
+        ]
+      },
+      "CodeCommitRepositoryName": {
+        "AllowedPatternRegex": "^[a-zA-Z0-9._-]+(?<!\\.git)$",
+        "StringMax": 100,
+        "StringMin": 1
+      },
+      "CodeDeployApplicationPlatform": {
+        "AllowedValues": [
+          "ECS",
+          "Lambda",
+          "Server"
+        ]
+      },
+      "CodeDeployAutoRollbackConfigurationEvents": {
+        "AllowedValues": [
+          "DEPLOYMENT_FAILURE",
+          "DEPLOYMENT_STOP_ON_ALARM",
+          "DEPLOYMENT_STOP_ON_REQUEST"
+        ]
+      },
+      "CodeDeployConfigMinimumHealthyHostsType": {
+        "AllowedValues": [
+          "FLEET_PERCENT",
+          "HOST_COUNT"
+        ]
+      },
+      "CodeDeployDeploymentStyleOption": {
+        "AllowedValues": [
+          "WITH_TRAFFIC_CONTROL",
+          "WITHOUT_TRAFFIC_CONTROL"
+        ]
+      },
+      "CodeDeployDeploymentStyleType": {
+        "AllowedValues": [
+          "BLUE_GREEN",
+          "IN_PLACE"
+        ]
+      },
+      "CodeDeployTriggerConfigEvent": {
+        "AllowedValues": [
+          "DeploymentFailure",
+          "DeploymentReady",
+          "DeploymentRollback",
+          "DeploymentStart",
+          "DeploymentStop",
+          "DeploymentSuccess",
+          "InstanceFailure",
+          "InstanceReady",
+          "InstanceStart",
+          "InstanceSuccess"
+        ]
+      },
+      "CodePipelineActionTypeCategory": {
+        "AllowedValues": [
+          "Approval",
+          "Build",
+          "Deploy",
+          "Invoke",
+          "Source",
+          "Test"
+        ]
+      },
+      "CodePipelineActionTypeOwner": {
+        "AllowedValues": [
+          "AWS",
+          "Custom",
+          "ThirdParty"
+        ]
+      },
+      "CodePipelineArtifactStoreType": {
+        "AllowedValues": [
+          "S3"
+        ]
+      },
+      "CodePipelineBlockerType": {
+        "AllowedValues": [
+          "Schedule"
+        ]
+      },
+      "CodePipelineConfigurationPropertiesType": {
+        "AllowedValues": [
+          "Boolean",
+          "Number",
+          "String"
+        ]
+      },
+      "CodePipelineWehbookAuthentication": {
+        "AllowedValues": [
+          "GITHUB_HMAC",
+          "IP",
+          "UNAUTHENTICATED"
+        ]
+      },
+      "CognitoAliasAttributes": {
+        "AllowedValues": [
+          "email",
+          "phone_number",
+          "preferred_username"
+        ]
+      },
+      "CognitoAttributes": {
+        "AllowedValues": [
+          "email",
+          "phone_number"
+        ]
+      },
+      "CognitoDesiredDeliveryMediums": {
+        "AllowedValues": [
+          "EMAIL",
+          "SMS"
+        ]
+      },
+      "CognitoExplicitAuthFlows": {
+        "AllowedValues": [
+          "ADMIN_NO_SRP_AUTH",
+          "CUSTOM_AUTH_FLOW_ONLY",
+          "USER_PASSWORD_AUTH"
+        ]
+      },
+      "CognitoMessageAction": {
+        "AllowedValues": [
+          "RESEND",
+          "SUPPRESS"
+        ]
+      },
+      "CognitoMfaConfiguration": {
+        "AllowedValues": [
+          "OFF",
+          "ON",
+          "OPTIONAL"
+        ]
+      },
+      "CognitoSchemaAttributeDataType": {
+        "AllowedValues": [
+          "Boolean",
+          "DateTime",
+          "Number",
+          "String"
+        ]
+      },
+      "ConfigFrequency": {
+        "AllowedValues": [
+          "One_Hour",
+          "Six_Hours",
+          "Three_Hours",
+          "Twelve_Hours",
+          "TwentyFour_Hours"
+        ]
+      },
+      "ConfigRuleEventSource": {
+        "AllowedValues": [
+          "aws.config"
+        ]
+      },
+      "ConfigRuleMessageType": {
+        "AllowedValues": [
+          "ConfigurationItemChangeNotification",
+          "ConfigurationSnapshotDeliveryCompleted",
+          "OversizedConfigurationItemChangeNotification",
+          "ScheduledNotification"
+        ]
+      },
+      "ConfigRuleSourceOwner": {
+        "AllowedValues": [
+          "AWS",
+          "CUSTOM_LAMBDA"
+        ]
+      },
+      "CustomerGatewayType": {
+        "AllowedValues": [
+          "ipsec.1"
+        ]
+      },
+      "DAXInstanceType": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "DLMPolicyResourceType": {
+        "AllowedValues": [
+          "VOLUME"
+        ]
+      },
+      "DefaultCountryCodeAlpha2": {
+        "AllowedValues": [
+          "AD",
+          "AE",
+          "AF",
+          "AG",
+          "AI",
+          "AL",
+          "AM",
+          "AO",
+          "AQ",
+          "AR",
+          "AS",
+          "AT",
+          "AU",
+          "AW",
+          "AX",
+          "AZ",
+          "BA",
+          "BB",
+          "BD",
+          "BE",
+          "BF",
+          "BG",
+          "BH",
+          "BI",
+          "BJ",
+          "BL",
+          "BM",
+          "BN",
+          "BO",
+          "BQ",
+          "BR",
+          "BS",
+          "BT",
+          "BV",
+          "BW",
+          "BY",
+          "BZ",
+          "CA",
+          "CC",
+          "CD",
+          "CF",
+          "CG",
+          "CH",
+          "CI",
+          "CK",
+          "CL",
+          "CM",
+          "CN",
+          "CO",
+          "CR",
+          "CU",
+          "CV",
+          "CW",
+          "CX",
+          "CY",
+          "CZ",
+          "DE",
+          "DJ",
+          "DK",
+          "DM",
+          "DO",
+          "DZ",
+          "EC",
+          "EE",
+          "EG",
+          "EH",
+          "ER",
+          "ES",
+          "ET",
+          "FI",
+          "FJ",
+          "FK",
+          "FM",
+          "FO",
+          "FR",
+          "GA",
+          "GB",
+          "GD",
+          "GE",
+          "GF",
+          "GG",
+          "GH",
+          "GI",
+          "GL",
+          "GM",
+          "GN",
+          "GP",
+          "GQ",
+          "GR",
+          "GS",
+          "GT",
+          "GU",
+          "GW",
+          "GY",
+          "HK",
+          "HM",
+          "HN",
+          "HR",
+          "HT",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IM",
+          "IN",
+          "IO",
+          "IQ",
+          "IR",
+          "IS",
+          "IT",
+          "JE",
+          "JM",
+          "JO",
+          "JP",
+          "KE",
+          "KG",
+          "KH",
+          "KI",
+          "KM",
+          "KN",
+          "KP",
+          "KR",
+          "KW",
+          "KY",
+          "KZ",
+          "LA",
+          "LB",
+          "LC",
+          "LI",
+          "LK",
+          "LR",
+          "LS",
+          "LT",
+          "LU",
+          "LV",
+          "LY",
+          "MA",
+          "MC",
+          "MD",
+          "ME",
+          "MF",
+          "MG",
+          "MH",
+          "MK",
+          "ML",
+          "MM",
+          "MN",
+          "MO",
+          "MP",
+          "MQ",
+          "MR",
+          "MS",
+          "MT",
+          "MU",
+          "MV",
+          "MW",
+          "MX",
+          "MY",
+          "MZ",
+          "NA",
+          "NC",
+          "NE",
+          "NF",
+          "NG",
+          "NI",
+          "NL",
+          "NO",
+          "NP",
+          "NR",
+          "NU",
+          "NZ",
+          "OM",
+          "PA",
+          "PE",
+          "PF",
+          "PG",
+          "PH",
+          "PK",
+          "PL",
+          "PM",
+          "PN",
+          "PR",
+          "PS",
+          "PT",
+          "PW",
+          "PY",
+          "QA",
+          "RE",
+          "RO",
+          "RS",
+          "RU",
+          "RW",
+          "SA",
+          "SB",
+          "SC",
+          "SD",
+          "SE",
+          "SG",
+          "SH",
+          "SI",
+          "SJ",
+          "SK",
+          "SL",
+          "SM",
+          "SN",
+          "SO",
+          "SR",
+          "SS",
+          "ST",
+          "SV",
+          "SX",
+          "SY",
+          "SZ",
+          "TC",
+          "TD",
+          "TF",
+          "TG",
+          "TH",
+          "TJ",
+          "TK",
+          "TL",
+          "TM",
+          "TN",
+          "TO",
+          "TR",
+          "TT",
+          "TV",
+          "TW",
+          "TZ",
+          "UA",
+          "UG",
+          "UM",
+          "US",
+          "UY",
+          "UZ",
+          "VA",
+          "VC",
+          "VE",
+          "VG",
+          "VI",
+          "VN",
+          "VU",
+          "WF",
+          "WS",
+          "YE",
+          "YT",
+          "ZA",
+          "ZM",
+          "ZW"
+        ]
+      },
+      "DefaultEnabledState": {
+        "AllowedValues": [
+          "DISABLED",
+          "ENABLED"
+        ]
+      },
+      "DHCPOptionsNetbiosNodeType": {
+        "AllowedValues": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ]
+      },
+      "DmsEndpointEngineName": {
+        "AllowedValues": [
+          "aurora-postgresql",
+          "aurora",
+          "azuredb",
+          "db2",
+          "dynamodb",
+          "mariadb",
+          "mongodb",
+          "mysql",
+          "oracle",
+          "postgres",
+          "redshift",
+          "s3",
+          "sqlserver",
+          "sybase"
+        ]
+      },
+      "DmsEndpointSslMode": {
+        "AllowedValues": [
+          "none",
+          "require",
+          "verify-ca",
+          "verify-full"
+        ]
+      },
+      "DmsEndpointType": {
+        "AllowedValues": [
+          "source",
+          "target"
+        ]
+      },
+      "DocumentDBEngineVersion": {
+        "AllowedValues": [
+          "docdb"
+        ]
+      },
+      "DocumentDBInstanceClass": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "DynamoDBAttributeType": {
+        "AllowedValues": [
+          "B",
+          "N",
+          "S"
+        ]
+      },
+      "DynamoDBBillingMode": {
+        "AllowedValues": [
+          "PAY_PER_REQUEST",
+          "PROVISIONED"
+        ]
+      },
+      "DynamoDBKeyType": {
+        "AllowedValues": [
+          "HASH",
+          "RANGE"
+        ]
+      },
+      "DynamoDBProjectionType": {
+        "AllowedValues": [
+          "ALL",
+          "INCLUDE",
+          "KEYS_ONLY"
+        ]
+      },
+      "DynamoDBStreamViewType": {
+        "AllowedValues": [
+          "KEYS_ONLY",
+          "NEW_AND_OLD_IMAGES",
+          "NEW_IMAGE",
+          "OLD_IMAGE"
+        ]
+      },
+      "EC2InstanceInitiatedShutdownBehavior": {
+        "AllowedValues": [
+          "stop",
+          "terminate"
+        ]
+      },
+      "EC2MarketType": {
+        "AllowedValues": [
+          "spot"
+        ]
+      },
+      "EC2ScalingPolicyPredifinedMetricSpecificationType": {
+        "AllowedValues": [
+          "ALBRequestCountPerTarget",
+          "ASGAverageCPUUtilization",
+          "ASGAverageNetworkIn",
+          "ASGAverageNetworkOut"
+        ]
+      },
+      "EC2SpotInstanceInitiatedShutdownBehavior": {
+        "AllowedValues": [
+          "hibernate",
+          "stop",
+          "terminate"
+        ]
+      },
+      "EC2SpotInstanceType": {
+        "AllowedValues": [
+          "one-time",
+          "persistent"
+        ]
+      },
+      "EbsIops": {
+        "NumberMax": 20000,
+        "NumberMin": 100
+      },
+      "EbsVolumeType": {
+        "AllowedValues": [
+          "gp2",
+          "io1",
+          "sc1",
+          "st1",
+          "standard"
+        ]
+      },
+      "EC2CapacityReservationEndDateType": {
+        "AllowedValues": [
+          "limited",
+          "unlimited"
+        ]
+      },
+      "EC2CapacityReservationInstanceMatchCriteria": {
+        "AllowedValues": [
+          "open",
+          "targeted"
+        ]
+      },
+      "EC2CapacityReservationInstancePlatform": {
+        "AllowedValues": [
+          "Linux/UNIX",
+          "Red Hat Enterprise Linux",
+          "SUSE Linux",
+          "Windows with SQL Server Enterprise",
+          "Windows with SQL Server Standard",
+          "Windows with SQL Server Web",
+          "Windows with SQL Server",
+          "Windows"
+        ]
+      },
+      "Ec2CpuCredits": {
+        "AllowedValues": [
+          "standard",
+          "unlimited"
+        ]
+      },
+      "Ec2ElasticIpDomain": {
+        "AllowedValues": [
+          "standard",
+          "vpc"
+        ]
+      },
+      "Ec2FleetExcessCapacityTerminationPolicy": {
+        "AllowedValues": [
+          "no-termination",
+          "termination"
+        ]
+      },
+      "Ec2FleetType": {
+        "AllowedValues": [
+          "instant",
+          "maintain",
+          "request"
+        ]
+      },
+      "Ec2FleetOnDemandAllocationStrategy": {
+        "AllowedValues": [
+          "lowest-price",
+          "prioritized"
+        ]
+      },
+      "Ec2FleetSpotAllocationStrategy": {
+        "AllowedValues": [
+          "diversified",
+          "lowest-price"
+        ]
+      },
+      "Ec2FleetSpotInterruptionBehavior": {
+        "AllowedValues": [
+          "hibernate",
+          "stop",
+          "terminate"
+        ]
+      },
+      "Ec2FleetDefaultTargetCapacityType": {
+        "AllowedValues": [
+          "on-demand",
+          "spot"
+        ]
+      },
+      "Ec2FlowLogDestinationType": {
+        "AllowedValues": [
+          "cloud-watch-logs",
+          "s3"
+        ]
+      },
+      "Ec2FlowLogResourceType": {
+        "AllowedValues": [
+          "NetworkInterface",
+          "Subnet",
+          "VPC"
+        ]
+      },
+      "Ec2FlowLogTrafficType": {
+        "AllowedValues": [
+          "ACCEPT",
+          "ALL",
+          "REJECT"
+        ]
+      },
+      "Ec2HostAutoPlacement": {
+        "AllowedValues": [
+          "off",
+          "on"
+        ]
+      },
+      "Ec2InstanceType": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "Ec2Tenancy": {
+        "AllowedValues": [
+          "dedicated",
+          "default",
+          "host"
+        ]
+      },
+      "ElasticInferenceAccelerator": {
+        "AllowedValues": [
+          "eia1.large",
+          "eia1.medium",
+          "eia1.xlarge"
+        ]
+      },
+      "GlueConnectionInputType": {
+        "AllowedValues": [
+          "JDBC",
+          "SFTP"
+        ]
+      },
+      "GlueCrawlerDeleteBehavior": {
+        "AllowedValues": [
+          "DELETE_FROM_DATABASE",
+          "DEPRECATE_IN_DATABASE",
+          "LOG"
+        ]
+      },
+      "GlueCrawlerUpdateBehavior": {
+        "AllowedValues": [
+          "LOG",
+          "UPDATE_IN_DATABASE"
+        ]
+      },
+      "GlueTableType": {
+        "AllowedValues": [
+          "EXTERNAL_TABLE",
+          "VIRTUAL_VIEW"
+        ]
+      },
+      "GlueTriggerPredicateLogical": {
+        "AllowedValues": [
+          "AND"
+        ]
+      },
+      "GlueTriggerPredicateLogicalOperator": {
+        "AllowedValues": [
+          "EQUALS"
+        ]
+      },
+      "GlueTriggerPredicateState": {
+        "AllowedValues": [
+          "SUCCEEDED"
+        ]
+      },
+      "GlueTriggerType": {
+        "AllowedValues": [
+          "CONDITIONAL",
+          "ON_DEMAND",
+          "SCHEDULED"
+        ]
+      },
+      "GuardDutyDetectorFrequency": {
+        "AllowedValues": [
+          "FIFTEEN_MINUTES",
+          "ONE_HOUR",
+          "SIX_HOURS"
+        ]
+      },
+      "GuardDutyFilterAction": {
+        "AllowedValues": [
+          "ARCHIVE",
+          "NOOP"
+        ]
+      },
+      "GuardDutyIPSetFormat": {
+        "AllowedValues": [
+          "OTX_CSV",
+          "STIX",
+          "TXT"
+        ]
+      },
+      "GuardDutyMemberStatus": {
+        "AllowedValues": [
+          "Created",
+          "Disabled",
+          "Enabled",
+          "Invited",
+          "Removed",
+          "Resigned"
+        ]
+      },
+      "GuardDutyThreadIntelSetFormat": {
+        "AllowedValues": [
+          "ALIEN_VAULT",
+          "FIRE_EYE",
+          "OTX_CSV",
+          "PROOF_POINT",
+          "STIX",
+          "TXT"
+        ]
+      },
+      "HttpProtocol": {
+        "AllowedValues": [
+          "http",
+          "https"
+        ]
+      },
+      "IamAssumeRoleDocument": {
+        "JsonMax": 2048,
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "IamGroup": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::Group"
+          ]
+        }
+      },
+      "IamGroups": {
+        "ListMax": 10,
+        "ListMin": 0
+      },
+      "IamInstanceProfile": {
+        "AllowedPatternRegex": "[a-zA-Z0-9+=,.@\\-_]+",
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::InstanceProfile"
+          ]
+        }
+      },
+      "IamInstanceProfile.Arn": {
+        "GetAtt": {
+          "AWS::IAM::InstanceProfile": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "IamInstanceProfile.NameOrArn": {
+        "GetAtt": {
+          "AWS::IAM::InstanceProfile": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::InstanceProfile"
+          ]
+        }
+      },
+      "IamInstanceProfileRole": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::Role"
+          ]
+        }
+      },
+      "IamInstanceProfileRoles": {
+        "ListMax": 1,
+        "ListMin": 1
+      },
+      "IamManagedPolicy.Arn": {
+        "AllowedPatternRegex": "arn:(aws[a-zA-Z-]*)?:iam::(\\d{12}|aws):policy/[a-zA-Z_0-9+=,.@\\-_/]+",
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::ManagedPolicy"
+          ]
+        }
+      },
+      "IamManagedPolicy.Arns": {
+        "ListMax": 20,
+        "ListMin": 0
+      },
+      "IamManagedPolicyDocument": {
+        "JsonMax": 6144,
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "IamPath": {
+        "AllowedPatternRegex": "^/(.+/)*$",
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "IamRole": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::Role"
+          ]
+        }
+      },
+      "IamRole.Arn": {
+        "AllowedPatternRegex": "arn:(aws[a-zA-Z-]*)?:iam::\\d{12}:role/[a-zA-Z_0-9+=,.@\\-_/]+",
+        "GetAtt": {
+          "AWS::IAM::Role": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "IamRole.NameOrArn": {
+        "GetAtt": {
+          "AWS::IAM::Role": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::IAM::Role"
+          ]
+        }
+      },
+      "IamUser.Arn": {
+        "GetAtt": {
+          "AWS::IAM::User": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "ImageId": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "ImageId"
+          ]
+        }
+      },
+      "KeyPair": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "KeyPair"
+          ]
+        }
+      },
+      "KmsKey.Arn": {
+        "GetAtt": {
+          "AWS::KMS::Key": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "KmsKey.Id": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::KMS::Key"
+          ]
+        }
+      },
+      "KmsKey.IdOrArn": {
+        "GetAtt": {
+          "AWS::KMS::Key": "Arn"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::KMS::Key"
+          ]
+        }
+      },
+      "LambdaRuntime": {
+        "AllowedValues": [
+          "dotnetcore1.0",
+          "dotnetcore2.0",
+          "dotnetcore2.1",
+          "go1.x",
+          "java8",
+          "nodejs",
+          "nodejs4.3-edge",
+          "nodejs4.3",
+          "nodejs6.10",
+          "nodejs8.10",
+          "nodejs10.x",
+          "provided",
+          "python2.7",
+          "python3.6",
+          "python3.7",
+          "ruby2.5"
+        ]
+      },
+      "LaunchConfigurationName": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::AutoScaling::LaunchConfiguration"
+          ]
+        }
+      },
+      "LoadBalancerPort": {
+        "NumberMax": 65535,
+        "NumberMin": 1,
+        "Ref": {
+          "Parameters": [
+            "String",
+            "Number"
+          ]
+        }
+      },
+      "LoadBalancerName": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::ElasticLoadBalancing::LoadBalancer"
+          ]
+        }
+      },
+      "LoadBalancerNames": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings"
+          ]
+        }
+      },
+      "LoadBalancerV2Arn": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          ]
+        }
+      },
+      "MicrosoftADEdition": {
+        "AllowedValues": [
+          "Enterprise",
+          "Standard"
+        ]
+      },
+      "NeptuneInstanceClass": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "NetworkAclRuleAction": {
+        "AllowedValues": [
+          "allow",
+          "deny"
+        ]
+      },
+      "NetworkAclRuleNumber": {
+        "NumberMax": 32766,
+        "NumberMin": 1
+      },
+      "NetworkInterfacePermission": {
+        "AllowedValues": [
+          "EIP-ASSOCIATE",
+          "INSTANCE-ATTACH"
+        ]
+      },
+      "PerformanceInsightsRetentionPeriod": {
+        "AllowedValues": [
+          "7",
+          "731"
+        ]
+      },
+      "PlacementGroup": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::EC2::PlacementGroup"
+          ]
+        }
+      },
+      "PlacementGroupStrategy": {
+        "AllowedValues": [
+          "cluster",
+          "partition",
+          "spread"
+        ]
+      },
+      "PlacementTenancy": {
+        "AllowedValues": [
+          "dedicated",
+          "default"
+        ],
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "PredicateType": {
+        "AllowedValues": [
+          "ByteMatch",
+          "GeoMatch",
+          "IPMatch",
+          "RegexMatch",
+          "SizeConstraint",
+          "SqlInjectionMatch",
+          "XssMatch"
+        ]
+      },
+      "PrivateIpAddress": {
+        "GetAtt": {
+          "AWS::EC2::NetworkInterface": "PrimaryPrivateIpAddress"
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "RdsInstanceMonitoringInterval": {
+        "AllowedValues": [
+          "0",
+          "1",
+          "5",
+          "10",
+          "15",
+          "30",
+          "60"
+        ]
+      },
+      "RdsInstanceType": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "RecordSetFailover": {
+        "AllowedValues": [
+          "PRIMARY",
+          "SECONDARY"
+        ]
+      },
+      "RecordSetGeoContinentCode": {
+        "AllowedValues": [
+          "AF",
+          "AN",
+          "AS",
+          "EU",
+          "NA",
+          "OC",
+          "SA"
+        ]
+      },
+      "RecordSetType": {
+        "AllowedValues": [
+          "A",
+          "AAAA",
+          "CAA",
+          "CNAME",
+          "MX",
+          "NAPTR",
+          "NS",
+          "PTR",
+          "SOA",
+          "SPF",
+          "SRV",
+          "TXT"
+        ]
+      },
+      "RedshiftClusterType": {
+        "AllowedValues": [
+          "multi-node",
+          "single-node"
+        ]
+      },
+      "RedshiftClusterVersion": {
+        "AllowedValues": [
+          "1.0"
+        ]
+      },
+      "RedshiftInstanceType": {
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "Region": {
+        "AllowedValues": [
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ca-central-1",
+          "eu-central-1",
+          "eu-north-1",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
+      "RestApiId": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::ApiGateway::RestApi"
+          ]
+        }
+      },
+      "Route53HealthCheckConfigHealthStatus": {
+        "AllowedValues": [
+          "Healthy",
+          "LastKnownStatus",
+          "Unhealthy"
+        ]
+      },
+      "Route53HealthCheckConfigType": {
+        "AllowedValues": [
+          "CALCULATED",
+          "CLOUDWATCH_METRIC",
+          "HTTP_STR_MATCH",
+          "HTTP",
+          "HTTPS_STR_MATCH",
+          "HTTPS",
+          "TCP"
+        ]
+      },
+      "Route53ResolverEndpointDirection": {
+        "AllowedValues": [
+          "INBOUND",
+          "OUTBOUND"
+        ]
+      },
+      "Route53ResolverRuleType": {
+        "AllowedValues": [
+          "FORWARD",
+          "RECURSIVE",
+          "SYSTEM"
+        ]
+      },
+      "S3BucketAccelerationStatus": {
+        "AllowedValues": [
+          "Enabled",
+          "Suspended"
+        ]
+      },
+      "S3BucketAccessControl": {
+        "AllowedValues": [
+          "AuthenticatedRead",
+          "AwsExecRead",
+          "BucketOwnerFullControl",
+          "BucketOwnerRead",
+          "LogDeliveryWrite",
+          "Private",
+          "PublicRead",
+          "PublicReadWrite"
+        ]
+      },
+      "S3BucketSSEAlgorithm": {
+        "AllowedValues": [
+          "AES256",
+          "aws:kms"
+        ]
+      },
+      "S3BucketTopicConfigurationEvent": {
+        "AllowedValues": [
+          "s3:ObjectCreated:*",
+          "s3:ObjectCreated:CompleteMultipartUpload",
+          "s3:ObjectCreated:Copy",
+          "s3:ObjectCreated:Post",
+          "s3:ObjectCreated:Put",
+          "s3:ObjectRemoved:*",
+          "s3:ObjectRemoved:Delete",
+          "s3:ObjectRemoved:DeleteMarkerCreated",
+          "s3:ObjectRestore:Completed",
+          "s3:ObjectRestore:Post",
+          "s3:ReducedRedundancyLostObject"
+        ]
+      },
+      "S3BucketVersioningConfigurationStatus": {
+        "AllowedValues": [
+          "Enabled",
+          "Suspended"
+        ]
+      },
+      "ScalingInstructionPredictiveScalingMaxCapacityBehavior": {
+        "AllowedValues": [
+          "SetForecastCapacityToMaxCapacity",
+          "SetMaxCapacityToForecastCapacity",
+          "SetMaxCapacityAboveForecastCapacity"
+        ]
+      },
+      "ScalingInstructionPredictiveScalingMode": {
+        "AllowedValues": [
+          "ForecastAndScale",
+          "ForecastOnly"
+        ]
+      },
+      "ScalingInstructionScalableDimension": {
+        "AllowedValues": [
+          "autoscaling:autoScalingGroup:DesiredCapacity",
+          "ecs:service:DesiredCount",
+          "ec2:spot-fleet-request:TargetCapacity",
+          "dynamodb:table:ReadCapacityUnits",
+          "dynamodb:table:WriteCapacityUnits",
+          "dynamodb:index:ReadCapacityUnits",
+          "dynamodb:index:WriteCapacityUnits",
+          "rds:cluster:ReadReplicaCount"
+        ]
+      },
+      "ScalingInstructionServiceNamespace": {
+        "AllowedValues": [
+          "autoscaling",
+          "dynamodb",
+          "ecs",
+          "ec2",
+          "rds"
+        ]
+      },
+      "ScalingPolicyCustomizedMetricSpecificationStatistic": {
+        "AllowedValues": [
+          "Average",
+          "Minimum",
+          "Maximum",
+          "SampleCount",
+          "Sum"
+        ]
+      },
+      "SecretsManagerTargetType": {
+        "AllowedValues": [
+          "AWS::RDS::DBCluster",
+          "AWS::RDS::DBInstance"
+        ]
+      },
+      "SecurityGroup": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "SecurityGroupId"
+          ],
+          "Resources": [
+            "AWS::EC2::SecurityGroup"
+          ]
+        }
+      },
+      "SecurityGroupDescription": {
+        "AllowedPatternRegex": "^([a-z,A-Z,0-9,. _\\-:/()#,@[\\]+=&;\\{\\}!$*])*$",
+        "StringMax": "255",
+        "StringMin": ""
+      },
+      "SecurityGroupId": {
+        "GetAtt": {
+          "AWS::EC2::SecurityGroup": "GroupId",
+          "AWS::EC2::VPC": "DefaultSecurityGroup"
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "SecurityGroupId"
+          ]
+        }
+      },
+      "SecurityGroupIds": {
+        "GetAtt": {
+          "AWS::ElasticLoadBalancingV2::LoadBalancer": "SecurityGroups"
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings",
+            "SecurityGroupIds"
+          ]
+        }
+      },
+      "SecurityGroupNameOrId": {
+        "GetAtt": {
+          "AWS::EC2::SecurityGroup": "GroupId",
+          "AWS::EC2::VPC": "DefaultSecurityGroup"
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "SecurityGroupId"
+          ],
+          "Resources": [
+            "AWS::EC2::SecurityGroup"
+          ]
+        }
+      },
+      "SecurityGroupNameOrIds": {
+        "GetAtt": {
+          "AWS::ElasticLoadBalancingV2::LoadBalancer": "SecurityGroups"
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings",
+            "SecurityGroupIds"
+          ]
+        }
+      },
+      "SecurityGroups": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings",
+            "SecurityGroupIds"
+          ]
+        }
+      },
+      "ServiceDiscoveryDnsType": {
+        "AllowedValues": [
+          "A",
+          "AAAA",
+          "SRV"
+        ]
+      },
+      "ServiceDiscoveryHealthCheckConfigType": {
+        "AllowedValues": [
+          "HTTP",
+          "HTTPS",
+          "TCP"
+        ]
+      },
+      "SesReceiptRuleTlsPolicy": {
+        "AllowedValues": [
+          "Optional",
+          "Require"
+        ]
+      },
+      "SimpleADSize": {
+        "AllowedValues": [
+          "Large",
+          "Small"
+        ]
+      },
+      "SnsSubscriptionProtocol": {
+        "AllowedValues": [
+          "application",
+          "email-json",
+          "email",
+          "http",
+          "https",
+          "lambda",
+          "sms",
+          "sqs"
+        ]
+      },
+      "SpotFleetAllocationStrategy": {
+        "AllowedValues": [
+          "diversified",
+          "lowestPrice"
+        ]
+      },
+      "SpotFleetExcessCapacityTerminationPolicy": {
+        "AllowedValues": [
+          "default",
+          "noTermination"
+        ]
+      },
+      "SpotFleetInstanceInterruptionBehavior": {
+        "AllowedValues": [
+          "hibernate",
+          "stop",
+          "terminate"
+        ]
+      },
+      "SpotFleetType": {
+        "AllowedValues": [
+          "instant",
+          "maintain",
+          "request"
+        ]
+      },
+      "SsmDocumentName": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::SSM::Document"
+          ]
+        }
+      },
+      "String": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ]
+        }
+      },
+      "SubnetId": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String",
+            "SubnetId"
+          ],
+          "Resources": [
+            "AWS::EC2::Subnet"
+          ]
+        }
+      },
+      "SubnetIds": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings",
+            "SubnetIds"
+          ]
+        }
+      },
+      "TargetGroupArn": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "String"
+          ],
+          "Resources": [
+            "AWS::ElasticLoadBalancingV2::TargetGroup"
+          ]
+        }
+      },
+      "TargetGroupArns": {
+        "GetAtt": {
+        },
+        "Ref": {
+          "Parameters": [
+            "Strings"
+          ]
+        }
+      },
+      "TargetGroupHealthCheckTimeoutSeconds": {
+        "NumberMax": 60,
+        "NumberMin": 2
+      },
+      "TransitGatewayEnabled": {
+        "AllowedValues": [
+          "disable",
+          "enable"
+        ]
+      },
+      "VpcEndpointConnectionEvents": {
+        "AllowedValues": [
+          "Accept",
+          "Connect",
+          "Delete",
+          "Reject"
+        ]
+      },
+      "VpcEndpointType": {
+        "AllowedValues": [
+          "Gateway",
+          "Interface"
+        ]
+      },
+      "VpcId": {
+        "GetAtt": {
+          "AWS::EC2::SecurityGroup": "VpcId",
+          "AWS::EC2::Subnet": "VpcId"
+        },
+        "Ref": {
+          "Parameters": [
+            "VpcId",
+            "String"
+          ],
+          "Resources": [
+            "AWS::EC2::VPC"
+          ]
+        }
+      },
+      "VpnType": {
+        "AllowedValues": [
+          "ipsec.1"
+        ]
+      },
+      "WorkspacePropertyComputeType": {
+        "AllowedValues": [
+          "GRAPHICS",
+          "PERFORMANCE",
+          "POWER",
+          "STANDARD",
+          "VALUE"
+        ]
+      },
+      "WorkspacePropertyRunningMode": {
+        "AllowedValues": [
+          "ALWAYS_ON",
+          "AUTO_STOP"
+        ]
+      }
+    }
+  }
+]
