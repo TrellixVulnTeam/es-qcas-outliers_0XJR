@@ -61,7 +61,6 @@ def lambda_handler(event, context):
         json_response = wrangled_data.get('Payload').read().decode("UTF-8")
         sqs.send_message(QueueUrl=queue_url, MessageBody=json_response, MessageGroupId=sqs_messageid_name,
                          MessageDeduplicationId=str(random.getrandbits(128)))
-
         send_to_s3(json_response, bucket_name)
 
         sqs.delete_message(QueueUrl=queue_url, ReceiptHandle=receipt_handle)

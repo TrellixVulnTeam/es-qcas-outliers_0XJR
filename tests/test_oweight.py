@@ -107,6 +107,23 @@ class test_means(unittest.TestCase):
             assert mock_json.dumps.call_args[0][0]['success']
             assert response
 
+    @mock.patch('outlier_oweight_wrangler.open')
+    @mock.patch('outlier_oweight_wrangler.json')
+    @mock.patch('outlier_oweight_wrangler.boto3')
+    def test_wrangler_s3(self, mock_boto, mock_json, mock_open):
+
+        with open("final_oweight_output.json", "rb") as fo:
+
+            return_dict = {"Payload": fo}
+            mock_boto.client.return_value.invoke.return_value = return_dict
+
+            with open('./tmp/' + 'outlier_result.json', 'w+') as file:
+                mock_open.return_value = file
+                outlier_oweight_wrangler.lambda_handler(None, None)
+
+            responseDF = pd.read_json('./tmp/outlier_result.json')
+            expectedDF = pd.read_json('final_oweight_output.json')
+            assert_frame_equal(responseDF, expectedDF)
 
 
 if __name__ == '__main__':
