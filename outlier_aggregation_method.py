@@ -4,14 +4,6 @@ import boto3
 import os
 import pandas as pd
 
-# Set up clients
-lambda_client = boto3.client('lambda')
-
-error_handler_arn = os.environ['error_handler_arn']
-
-aggregate_column = os.environ['aggregate_column']
-sum_aggregate_column = os.environ['sum_aggregate_column']
-strata = os.environ['strata']
 
 
 def _get_traceback(exception):
@@ -28,6 +20,15 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    # Set up clients
+    lambda_client = boto3.client('lambda')
+
+    error_handler_arn = os.environ['error_handler_arn']
+
+    aggregate_column = os.environ['aggregate_column']
+    sum_aggregate_column = os.environ['sum_aggregate_column']
+    strata = os.environ['strata']
+
     try:
         input_data = pd.read_json(event)
 
