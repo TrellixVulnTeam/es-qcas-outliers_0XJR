@@ -1,9 +1,8 @@
 import traceback
 import json
-import boto3
 import os
+import boto3
 import pandas as pd
-
 
 
 def _get_traceback(exception):
@@ -38,13 +37,6 @@ def lambda_handler(event, context):
         final_output = json.loads(json_out)
 
     except Exception as exc:
-
-        # Invoke error handler lambda
-        lambda_client.invoke(
-            FunctionName=error_handler_arn,
-            InvocationType='Event',
-            Payload=json.dumps({'test': 'ccow'})
-        )
 
         return {
             "success": False,

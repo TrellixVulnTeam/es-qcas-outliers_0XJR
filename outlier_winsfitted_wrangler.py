@@ -1,9 +1,10 @@
 import json
-import boto3
 import traceback
 import pandas as pd
 import os
 import random
+import boto3
+
 
 def _get_traceback(exception):
     """
@@ -17,6 +18,7 @@ def _get_traceback(exception):
             etype=type(exception), value=exception, tb=exception.__traceback__
         )
     )
+
 
 def lambda_handler(event, context):
     # Set up clients
@@ -37,7 +39,6 @@ def lambda_handler(event, context):
     winsfitted_column = os.environ['winsfitted_column']
     try:
 
-
         # Reads in Data from SQS Queue
         response = sqs.receive_message(QueueUrl=queue_url)
         message = response['Messages'][0]
@@ -56,36 +57,34 @@ def lambda_handler(event, context):
 
         json_response = wrangled_data.get('Payload').read().decode("UTF-8")
         sqs.send_message(QueueUrl=queue_url, MessageBody=json_response, MessageGroupId=sqs_messageid_name,
-            MessageDeduplicationId=str(random.getrandbits(128)))
+                         MessageDeduplicationId=str(random.getrandbits(128)))
 
         sqs.delete_message(QueueUrl=queue_url, ReceiptHandle=receipt_handle)
 
-        send_sns_message(checkpoint,sns,arn)
+        send_sns_message(checkpoint, sns, arn)
 
     except Exception as exc:
 
         return {
             "success": False,
-			"checkpoint": checkpoint,
+            "checkpoint": checkpoint,
             "error": "Unexpected exception {}".format(_get_traceback(exc))
         }
 
     return {
         "success": True,
-		"checkpoint": checkpoint
+        "checkpoint": checkpoint
     }
 
 
-def send_sns_message(checkpoint,sns,arn):
-
+def send_sns_message(checkpoint, sns, arn):
     sns_message = {
         "success": True,
         "module": "outlier_aggregation",
-		"checkpoint": checkpoint
+        "checkpoint": checkpoint
     }
 
     sns.publish(
         TargetArn=arn,
         Message=json.dumps(sns_message)
     )
-

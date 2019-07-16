@@ -1,8 +1,8 @@
 import traceback
 import json
-import boto3
 import os
 import pandas as pd
+import boto3
 
 
 def _get_traceback(exception):
@@ -42,7 +42,7 @@ def lambda_handler(event, context):
         lambda_client.invoke(
             FunctionName=error_handler_arn,
             InvocationType='Event',
-            Payload=json.dumps({'test':'ccow'})
+            Payload=json.dumps({'test': 'ccow'})
         )
 
         return {
@@ -52,6 +52,7 @@ def lambda_handler(event, context):
 
     return final_output
 
+
 def calc_ratio(input_table, new_column_name, ratio_numerator, ratio_denominator):
-    input_table[new_column_name] = (input_table[ratio_numerator]/input_table[ratio_denominator])
+    input_table[new_column_name] = (input_table[ratio_numerator] / input_table[ratio_denominator])
     return input_table

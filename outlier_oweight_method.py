@@ -1,8 +1,8 @@
 import traceback
 import json
-import boto3
 import os
 import pandas as pd
+import boto3
 
 
 def _get_traceback(exception):
@@ -31,7 +31,8 @@ def lambda_handler(event, context):
     aggregate_column = os.environ['aggregate_column']
     try:
         input_data = pd.read_json(event)
-        outlier_weight_df = calc_outlier_weight(input_data, o_weight_column, k_value_column, a_weight_column, g_weight_column, aggregate_column)
+        outlier_weight_df = calc_outlier_weight(input_data, o_weight_column, k_value_column, a_weight_column,
+                                                g_weight_column, aggregate_column)
         json_out = outlier_weight_df.to_json(orient='records')
         final_output = json.loads(json_out)
 
@@ -41,7 +42,7 @@ def lambda_handler(event, context):
         lambda_client.invoke(
             FunctionName=error_handler_arn,
             InvocationType='Event',
-            Payload=json.dumps({'test':'ccow'})
+            Payload=json.dumps({'test': 'ccow'})
         )
 
         return {
@@ -51,6 +52,10 @@ def lambda_handler(event, context):
 
     return final_output
 
-def calc_outlier_weight(input_table,new_column_name,k_value_col, a_weight_col,g_weight_col,aggregate_col):
-    input_table[new_column_name] = ((input_table[aggregate_col]+((input_table[a_weight_col]*input_table[g_weight_col]-1) * input_table[k_value_col])) / (input_table[a_weight_col]*input_table[g_weight_col])) / input_table[aggregate_col]
+
+def calc_outlier_weight(input_table, new_column_name, k_value_col, a_weight_col, g_weight_col, aggregate_col):
+    input_table[new_column_name] = ((input_table[aggregate_col] + (
+            (input_table[a_weight_col] * input_table[g_weight_col] - 1) * input_table[k_value_col])) / (
+                                            input_table[a_weight_col] * input_table[g_weight_col])) / input_table[
+                                       aggregate_col]
     return input_table

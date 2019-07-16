@@ -1,9 +1,8 @@
 import traceback
 import json
-import boto3
 import os
 import pandas as pd
-
+import boto3
 
 
 def _get_traceback(exception):
@@ -33,7 +32,8 @@ def lambda_handler(event, context):
 
     try:
         input_data = pd.read_json(event)
-        k_value_df = calc_k_value(input_data, k_value_column, winsfitted_column,a_weight_column,g_weight_column,l_value_column)
+        k_value_df = calc_k_value(input_data, k_value_column, winsfitted_column, a_weight_column, g_weight_column,
+                                  l_value_column)
         json_out = k_value_df.to_json(orient='records')
         final_output = json.loads(json_out)
 
@@ -43,7 +43,7 @@ def lambda_handler(event, context):
         lambda_client.invoke(
             FunctionName=error_handler_arn,
             InvocationType='Event',
-            Payload=json.dumps({'test':'ccow'})
+            Payload=json.dumps({'test': 'ccow'})
         )
 
         return {
@@ -53,6 +53,8 @@ def lambda_handler(event, context):
 
     return final_output
 
-def calc_k_value(input_table,new_column_name,winsfitted_col,a_weight_col,g_weight_col,l_value_col):
-    input_table[new_column_name] = input_table[winsfitted_col]+((input_table[l_value_col]/(input_table[a_weight_col]*input_table[g_weight_col] - 1)))
+
+def calc_k_value(input_table, new_column_name, winsfitted_col, a_weight_col, g_weight_col, l_value_col):
+    input_table[new_column_name] = input_table[winsfitted_col] + (
+        (input_table[l_value_col] / (input_table[a_weight_col] * input_table[g_weight_col] - 1)))
     return input_table

@@ -1,9 +1,9 @@
 import json
-import boto3
 import traceback
 import pandas as pd
 import os
 import random
+import boto3
 
 
 def _get_traceback(exception):
@@ -65,7 +65,7 @@ def lambda_handler(event, context):
 
         sqs.delete_message(QueueUrl=queue_url, ReceiptHandle=receipt_handle)
 
-        send_sns_message(checkpoint,arn,sns)
+        send_sns_message(checkpoint, arn, sns)
 
     except Exception as exc:
 
@@ -81,7 +81,7 @@ def lambda_handler(event, context):
     }
 
 
-def send_sns_message(checkpoint,arn,sns):
+def send_sns_message(checkpoint, arn, sns):
     sns_message = {
         "success": True,
         "module": "outlier_aggregation",
