@@ -28,6 +28,13 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+    Ran on failure of the step function. Publishes a error message to sns and to
+    the s3 bucket
+    :param event: event lambda
+    :param context: context lambda
+    :return: None if successful otherwise a fail message
+    """
     try:
         # This may need to change as per payload indexing
         error_message = event['data']['lambdaresult']['error']

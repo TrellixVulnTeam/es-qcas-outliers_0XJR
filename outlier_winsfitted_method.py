@@ -19,6 +19,14 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+    Calculates the winsorization fitted value for each row based
+    on the strata's ratio, this method is called by the
+    winsfitted wrangler.
+    :param event: lambda event
+    :param context: lambda context
+    :return: json dataset
+    """
     # Set up clients
     lambda_client = boto3.client('lambda')
 
@@ -54,5 +62,13 @@ def lambda_handler(event, context):
 
 
 def winsfitted(input_data, new_column_name, ratio_col, selection_data):
+    """
+    Calculates the fitted value by multiplying the strata's ratio with the column's selection data
+    :param input_data: Input Dataframe
+    :param new_column_name: Winsfitted Column Name
+    :param ratio_col: Ratio Column name
+    :param selection_data: Selection Data Name
+    :return: input_data with fitted values in the new columns
+    """
     input_data[new_column_name] = input_data[ratio_col] * input_data[selection_data]
     return input_data
