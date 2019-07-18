@@ -51,3 +51,5 @@
 
 # deployment / artifacts
 .serverless/
+.idea/
+tests/__pycache__/
