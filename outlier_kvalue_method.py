@@ -19,6 +19,13 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+                Initialises the environment variables and calls the
+                function to calculate k_value.
+                :param event: Event object
+                :param context: Context object
+                :return: JSON string
+            """
     # Set up clients
     lambda_client = boto3.client('lambda')
 
@@ -55,6 +62,16 @@ def lambda_handler(event, context):
 
 
 def calc_k_value(input_table, new_column_name, winsfitted_col, a_weight_col, g_weight_col, l_value_col):
+    """
+                Generates a DataFrame containing a new column with calculated k_values in it.
+                :param input_table: DataFrame containing the columns
+                :param new_column_name: Column to write the calculated k values to
+                :param winsfitted_col: Column which provides values for the winsfitted variable
+                :param a_weight_col: Column which provides values for the a weight variable
+                :param g_weight_col: Column which provides values for the g weight variable
+                :param l_value_col: Column which provides the l values
+                :return: DataFrame
+                """
     input_table[new_column_name] = input_table[winsfitted_col] + (
         (input_table[l_value_col] / (input_table[a_weight_col] * input_table[g_weight_col] - 1)))
     return input_table

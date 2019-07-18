@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b5f0e5-b2bf-4c08-bf81-f3398c085aaf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/es-qcas-outliers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/es-qcas-outliers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d147849370d03f809e1eac235f7942d57b1a0897" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d147849370d03f809e1eac235f7942d57b1a0897" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outlier_aggregation_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_aggregation_method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outlier_aggregation_wrangler.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_aggregation_wrangler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outlier_calc_ratio_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_calc_ratio_method.py" afterDir="false" />
@@ -10,13 +14,6 @@
       <change beforePath="$PROJECT_DIR$/outlier_kvalue_wrangler.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_kvalue_wrangler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outlier_oweight_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_oweight_method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outlier_oweight_wrangler.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_oweight_wrangler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outlier_winsfitted_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_winsfitted_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outlier_winsfitted_wrangler.py" beforeDir="false" afterPath="$PROJECT_DIR$/outlier_winsfitted_wrangler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_aggregation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_calcratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_calcratio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_kvalue.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_kvalue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_oweight.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_oweight.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_winsfitted.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_winsfitted.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +22,68 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outlier_calc_ratio_method.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="64" column="83" selection-start-line="64" selection-start-column="83" selection-end-line="64" selection-end-column="83" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outlier_calc_ratio_wrangler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1105">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outlier_kvalue_method.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="71" column="70" lean-forward="true" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outlier_kvalue_wrangler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/outlier_oweight_method.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,21 +109,21 @@
         <option value="$PROJECT_DIR$/tests/test_winsfitted.py" />
         <option value="$PROJECT_DIR$/tests/test_kvalue.py" />
         <option value="$PROJECT_DIR$/tests/test_oweight.py" />
-        <option value="$PROJECT_DIR$/outlier_aggregation_method.py" />
-        <option value="$PROJECT_DIR$/outlier_aggregation_wrangler.py" />
-        <option value="$PROJECT_DIR$/outlier_calc_ratio_method.py" />
-        <option value="$PROJECT_DIR$/outlier_calc_ratio_wrangler.py" />
-        <option value="$PROJECT_DIR$/outlier_kvalue_wrangler.py" />
-        <option value="$PROJECT_DIR$/outlier_oweight_wrangler.py" />
         <option value="$PROJECT_DIR$/outlier_winsfitted_method.py" />
         <option value="$PROJECT_DIR$/outlier_winsfitted_wrangler.py" />
+        <option value="$PROJECT_DIR$/outlier_kvalue_wrangler.py" />
+        <option value="$PROJECT_DIR$/outlier_oweight_wrangler.py" />
+        <option value="$PROJECT_DIR$/outlier_aggregation_wrangler.py" />
+        <option value="$PROJECT_DIR$/outlier_calc_ratio_wrangler.py" />
+        <option value="$PROJECT_DIR$/outlier_aggregation_method.py" />
+        <option value="$PROJECT_DIR$/outlier_calc_ratio_method.py" />
         <option value="$PROJECT_DIR$/outlier_kvalue_method.py" />
         <option value="$PROJECT_DIR$/outlier_oweight_method.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="119" />
+    <option name="x" value="117" />
     <option name="y" value="-15" />
     <option name="width" value="1296" />
     <option name="height" value="738" />
@@ -217,9 +275,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16754478" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20747218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -231,7 +290,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22202487" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -306,9 +365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/tmp/outlier_result.json" />
     <entry file="file://$PROJECT_DIR$/test.json" />
-    <entry file="file://$PROJECT_DIR$/../PythonAtypicals/venv/Lib/site-packages/botocore/vendored/requests/packages/urllib3/_collections.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonAtypicals/venv/Lib/site-packages/botocore/vendored/requests/packages/urllib3/_collections.py" />
     <entry file="file://$PROJECT_DIR$/tmp/outlier_result.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -336,9 +393,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/createJson.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -393,60 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_aggregation_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_aggregation_wrangler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_calc_ratio_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_calc_ratio_wrangler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_kvalue_wrangler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_oweight_wrangler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outlier_winsfitted_method.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -464,20 +465,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_kvalue_method.py">
+    <entry file="file://$PROJECT_DIR$/outlier_oweight_wrangler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="1955">
+          <caret line="115" column="70" selection-start-line="115" selection-start-column="70" selection-end-line="115" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_aggregation_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="62" column="59" lean-forward="true" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_aggregation_wrangler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-905">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_calc_ratio_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="64" column="83" selection-start-line="64" selection-start-column="83" selection-end-line="64" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_calc_ratio_wrangler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_kvalue_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="71" column="70" lean-forward="true" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_kvalue_wrangler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/outlier_oweight_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="217">
+          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

@@ -19,6 +19,13 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+            Initialises the environment variables and calls the
+            function to calculate ratio.
+            :param event: Event object
+            :param context: Context object
+            :return: JSON string
+        """
     # Set up clients
     lambda_client = boto3.client('lambda')
 
@@ -54,5 +61,13 @@ def lambda_handler(event, context):
 
 
 def calc_ratio(input_table, new_column_name, ratio_numerator, ratio_denominator):
+    """
+            Generates a DataFrame containing a new column with value of calculated ratios in it.
+            :param input_table: DataFrame containing the columns
+            :param new_column_name: Column to write the calculated ratio values to
+            :param ratio_numerator: Column which provides values for the ratio numerator
+            :param ratio_denominator: Column which provides values for the ratio denominator
+            :return: DataFrame
+            """
     input_table[new_column_name] = (input_table[ratio_numerator] / input_table[ratio_denominator])
     return input_table

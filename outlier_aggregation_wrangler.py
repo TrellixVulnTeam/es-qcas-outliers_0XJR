@@ -20,6 +20,13 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+        Prepares data for and invokes the outlier_aggregation_method.
+        - adds on the required columns needed by the method.
+        :param event: lambda event
+        :param context: lambda context
+        :return: string
+        """
     # Set up clients
     sqs = boto3.client('sqs')
     lambda_client = boto3.client('lambda')
@@ -79,6 +86,13 @@ def lambda_handler(event, context):
 
 
 def send_sns_message(checkpoint, arn, sns):
+    """
+        This function is responsible for sending notifications to the SNS Topic.
+        :param checkpoint: checkpoint.
+        :param sns: SNS client
+        :param arn: SNS arn
+        :return: None
+        """
     sns_message = {
         "success": True,
         "module": "outlier_aggregation",

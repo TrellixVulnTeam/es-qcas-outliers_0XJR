@@ -21,6 +21,13 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+                Prepares data for and calls outlier_oweight_method.
+                - adds on the required columns needed by the method.
+                :param event: lambda event
+                :param context: lambda context
+                :return: string
+                """
     # Set up clients
     s3 = boto3.resource('s3')
     sqs = boto3.client('sqs')
@@ -82,6 +89,13 @@ def lambda_handler(event, context):
 
 
 def send_sns_message(checkpoint, arn, sns):
+    """
+                    This function is responsible for sending notifications to the SNS Topic.
+                    :param checkpoint: checkpoint.
+                    :param sns: SNS client
+                    :param arn: SNS arn
+                    :return: None
+                    """
     sns_message = {
         "success": True,
         "module": "outlier_aggregation",
@@ -95,6 +109,12 @@ def send_sns_message(checkpoint, arn, sns):
 
 
 def send_to_s3(message, bucket_name):
+    """
+                    This function is responsible for writing the file to the s3 bucket.
+                    :param message: The data to write to file.
+                    :param bucket_name: Name of the bucket to write the file to.
+                    :return: String: Name of the file or error string.
+                    """
     try:
         s3 = boto3.resource('s3')
 

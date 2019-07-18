@@ -19,16 +19,23 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
-    # Set up clients
-    lambda_client = boto3.client('lambda')
-
-    error_handler_arn = os.environ['error_handler_arn']
-
-    aggregate_column = os.environ['aggregate_column']
-    sum_aggregate_column = os.environ['sum_aggregate_column']
-    strata = os.environ['strata']
-
+    """
+        Initialises the environment variables and calls the
+        function to carry out aggregation.
+        :param event: Event object
+        :param context: Context object
+        :return: JSON string
+    """
     try:
+        # Set up clients
+        lambda_client = boto3.client('lambda')
+
+        error_handler_arn = os.environ['error_handler_arn']
+
+        aggregate_column = os.environ['aggregate_column']
+        sum_aggregate_column = os.environ['sum_aggregate_column']
+        strata = os.environ['strata']
+
         input_data = pd.read_json(event)
 
         aggregated_df = agg_grouped_data(input_data, aggregate_column, sum_aggregate_column, strata.split())
@@ -47,5 +54,14 @@ def lambda_handler(event, context):
 
 
 def agg_grouped_data(input_table, target_column, new_column_name, agg_strata):
+    """
+        Generates an aggregated DataFrame containing a new column
+        aggregated(summed) on target_column, grouped on columns provided by agg_strata
+        :param input_table: DataFrame containing the columns
+        :param target_column: column whose values are to be summed
+        :param new_column_name: Column to write the aggregated value to
+        :param agg_strata: List of column names to group on
+        :return: DataFrame
+        """
     input_table[new_column_name] = input_table.groupby(agg_strata)[target_column].transform('sum')
     return input_table
