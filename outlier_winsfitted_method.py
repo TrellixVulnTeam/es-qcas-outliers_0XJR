@@ -63,7 +63,7 @@ def lambda_handler(event, context):
 
 def winsfitted(input_data, new_column_name, ratio_col, selection_data):
     """
-    Calculates the fitted value by multiplying the strata's ratio with the column's selection data
+    Calculates the fitted value by multiplying the strata's ratio with the row's selection data
     :param input_data: Input Dataframe
     :param new_column_name: Winsfitted Column Name
     :param ratio_col: Ratio Column name
