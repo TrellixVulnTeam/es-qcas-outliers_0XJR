@@ -13,6 +13,11 @@ sqs_queue = os.environ['sqs_queue']
 
 
 def _get_traceback(exception):
+    """
+    Given an exception, returns the traceback as a string.
+    :param exception: Exception object
+    :return: string
+    """
     return ''.join(
         traceback.format_exception(
             etype=type(exception), value=exception, tb=exception.__traceback__
@@ -21,6 +26,13 @@ def _get_traceback(exception):
 
 
 def lambda_handler(event, context):
+    """
+    Ran on success of the step function. Publishes a success message to sns and purges
+    the sqs queue
+    :param event: lambda event
+    :param context: lambda context
+    :return: None if successful otherwise a fail message
+    """
     try:
         # receive message
         message = '{"success": True, "message": "QCAS Outliers has run successfully.", "anomalies":"PLACEHOLDER"}'
