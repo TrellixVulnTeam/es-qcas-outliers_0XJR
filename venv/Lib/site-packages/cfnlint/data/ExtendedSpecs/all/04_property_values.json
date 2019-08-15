@@ -1,0 +1,2309 @@
+[
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ApplicationAutoScaling::ScalingPolicy.CustomizedMetricSpecification/Properties/Statistic/Value",
+    "value": {
+      "ValueType": "ScalingPolicyCustomizedMetricSpecificationStatistic"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ApplicationAutoScaling::ScalingPolicy.PredefinedMetricSpecification/Properties/PredefinedMetricType/Value",
+    "value": {
+      "ValueType": "ApplicationAutoScalingPredefinedMetricSpecificationType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScaling::AutoScalingGroup.LifecycleHookSpecification/Properties/DefaultResult/Value",
+    "value": {
+      "ValueType": "AutoScalingLifecycleHookResult"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScaling::AutoScalingGroup.LifecycleHookSpecification/Properties/LifecycleTransition/Value",
+    "value": {
+      "ValueType": "AutoScalingLifecycleTransition"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScaling::ScalingPolicy.CustomizedMetricSpecification/Properties/Statistic/Value",
+    "value": {
+      "ValueType": "ScalingPolicyCustomizedMetricSpecificationStatistic"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScaling::ScalingPolicy.PredefinedMetricSpecification/Properties/PredefinedMetricType/Value",
+    "value": {
+      "ValueType": "EC2ScalingPolicyPredifinedMetricSpecificationType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScalingPlans::ScalingPlan.CustomizedScalingMetricSpecification/Properties/Statistic/Value",
+    "value": {
+      "ValueType": "ScalingPolicyCustomizedMetricSpecificationStatistic"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScalingPlans::ScalingPlan.PredefinedScalingMetricSpecification/Properties/PredefinedScalingMetricType/Value",
+    "value": {
+      "ValueType": "EC2ScalingPolicyPredifinedMetricSpecificationType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction/Properties/ScalableDimension/Value",
+    "value": {
+      "ValueType": "ScalingInstructionScalableDimension"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction/Properties/ServiceNamespace/Value",
+    "value": {
+      "ValueType": "ScalingInstructionServiceNamespace"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction/Properties/PredictiveScalingMaxCapacityBehavior/Value",
+    "value": {
+      "ValueType": "ScalingInstructionPredictiveScalingMaxCapacityBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction/Properties/PredictiveScalingMode/Value",
+    "value": {
+      "ValueType": "ScalingInstructionPredictiveScalingMode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Batch::ComputeEnvironment.ComputeResources/Properties/InstanceRole/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile.NameOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Batch::ComputeEnvironment.ComputeResources/Properties/SpotIamFleetRole/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.BudgetData/Properties/BudgetType/Value",
+    "value": {
+      "ValueType": "BudgetDataBudgetType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.BudgetData/Properties/TimeUnit/Value",
+    "value": {
+      "ValueType": "BudgetDataTimeUnit"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.Notification/Properties/ComparisonOperator/Value",
+    "value": {
+      "ValueType": "BudgetNotificationComparisonOperator"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.Notification/Properties/NotificationType/Value",
+    "value": {
+      "ValueType": "BudgetNotificationNotificationType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.Notification/Properties/ThresholdType/Value",
+    "value": {
+      "ValueType": "BudgetNotificationThresholdType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.Notification/Properties/Threshold/Value",
+    "value": {
+      "ValueType": "BudgetNotificationThreshold"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Budgets::Budget.Subscriber/Properties/SubscriptionType/Value",
+    "value": {
+      "ValueType": "BudgetSubscriptionType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.CustomErrorResponse/Properties/ErrorCode/Value",
+    "value": {
+      "ValueType": "CloudFrontCustomErrorResponsesErrorCode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.CustomErrorResponse/Properties/ResponseCode/Value",
+    "value": {
+      "ValueType": "CloudFrontCustomErrorResponsesResponseCode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.LambdaFunctionAssociation/Properties/EventType/Value",
+    "value": {
+      "ValueType": "CloudFrontLambdaFunctionAssociationsEventType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.CacheBehavior/Properties/ViewerProtocolPolicy/Value",
+    "value": {
+      "ValueType": "CloudFrontCacheBehaviourViewerProtocolPolicy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.DefaultCacheBehavior/Properties/ViewerProtocolPolicy/Value",
+    "value": {
+      "ValueType": "CloudFrontCacheBehaviourViewerProtocolPolicy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.DistributionConfig/Properties/HttpVersion/Value",
+    "value": {
+      "ValueType": "CloudFrontHttpVersion"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.DistributionConfig/Properties/PriceClass/Value",
+    "value": {
+      "ValueType": "CloudFrontPriceClass"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.ViewerCertificate/Properties/MinimumProtocolVersion/Value",
+    "value": {
+      "ValueType": "CloudFrontViewerCertificateMinimumProtocolVersion"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.ViewerCertificate/Properties/SslSupportMethod/Value",
+    "value": {
+      "ValueType": "CloudFrontViewerCertificateSSLSupportMethod"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.GeoRestriction/Properties/Locations/Value",
+    "value": {
+      "ValueType": "DefaultCountryCodeAlpha2"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.GeoRestriction/Properties/RestrictionType/Value",
+    "value": {
+      "ValueType": "CloudFrontGeoRestrictionType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.CustomOriginConfig/Properties/OriginProtocolPolicy/Value",
+    "value": {
+      "ValueType": "CloudFrontOriginProtocolPolicy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::Distribution.CustomOriginConfig/Properties/OriginSSLProtocols/Value",
+    "value": {
+      "ValueType": "CloudFrontOriginSSLProtocols"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudFront::StreamingDistribution.StreamingDistributionConfig/Properties/PriceClass/Value",
+    "value": {
+      "ValueType": "CloudFrontPriceClass"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudTrail::Trail.DataResource/Properties/Type/Value",
+    "value": {
+      "ValueType": "CloudTrailEventSelectorDataResourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CloudTrail::Trail.EventSelector/Properties/ReadWriteType/Value",
+    "value": {
+      "ValueType": "CloudTrailEventSelectorReadWriteType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::ConfigRule.Scope/Properties/ComplianceResourceTypes/Value",
+    "value": {
+      "ValueType": "ConfigResourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::ConfigRule.Source/Properties/Owner/Value",
+    "value": {
+      "ValueType": "ConfigRuleSourceOwner"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::ConfigRule.SourceDetail/Properties/EventSource/Value",
+    "value": {
+      "ValueType": "ConfigRuleEventSource"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::ConfigRule.SourceDetail/Properties/MaximumExecutionFrequency/Value",
+    "value": {
+      "ValueType": "ConfigFrequency"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::ConfigRule.SourceDetail/Properties/MessageType/Value",
+    "value": {
+      "ValueType": "ConfigRuleMessageType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::ConfigurationRecorder.RecordingGroup/Properties/ResourceTypes/Value",
+    "value": {
+      "ValueType": "ConfigResourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Config::DeliveryChannel.ConfigSnapshotDeliveryProperties/Properties/DeliveryFrequency/Value",
+    "value": {
+      "ValueType": "ConfigFrequency"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Events::EventBusPolicy.Condition/Properties/Key/Value",
+    "value": {
+      "ValueType": "CloudWatchEventBusPolicyConditionKey"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Events::EventBusPolicy.Condition/Properties/Type/Value",
+    "value": {
+      "ValueType": "CloudWatchEventBusPolicyConditionType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Artifacts/Properties/Packaging/Value",
+    "value": {
+      "ValueType": "CodeBuildArtifactPackaging"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Artifacts/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodeBuildArtifactType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.CloudWatchLogsConfig/Properties/Status/Value",
+    "value": {
+      "ValueType": "DefaultEnabledState"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Environment/Properties/ComputeType/Value",
+    "value": {
+      "ValueType": "CodeBuildEnvironmentComputeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Environment/Properties/ImagePullCredentialsType/Value",
+    "value": {
+      "ValueType": "CodeBuildEnvironmentCredentialsType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Environment/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodeBuildEnvironmentType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.ProjectCache/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodeBuildCacheType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.S3LogsConfig/Properties/Status/Value",
+    "value": {
+      "ValueType": "DefaultEnabledState"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.Source/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodeBuildSourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeCommit::Repository.RepositoryTrigger/Properties/Events/Value",
+    "value": {
+      "ValueType": "CodeCommitEvent"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodePipeline::CustomActionType.ConfigurationProperties/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodePipelineConfigurationPropertiesType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodePipeline::Pipeline.ArtifactStore/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodePipelineArtifactStoreType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodePipeline::Pipeline.ActionTypeId/Properties/Category/Value",
+    "value": {
+      "ValueType": "CodePipelineActionTypeCategory"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodePipeline::Pipeline.ActionTypeId/Properties/Owner/Value",
+    "value": {
+      "ValueType": "CodePipelineActionTypeOwner"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodePipeline::Pipeline.BlockerDeclaration/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodePipelineBlockerType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DLM::LifecyclePolicy.PolicyDetails/Properties/ResourceTypes/Value",
+    "value": {
+      "ValueType": "DLMPolicyResourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DynamoDB::Table.AttributeDefinition/Properties/AttributeType/Value",
+    "value": {
+      "ValueType": "DynamoDBAttributeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DynamoDB::Table.KeySchema/Properties/KeyType/Value",
+    "value": {
+      "ValueType": "DynamoDBKeyType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DynamoDB::Table.Projection/Properties/ProjectionType/Value",
+    "value": {
+      "ValueType": "DynamoDBProjectionType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DynamoDB::Table.StreamSpecification/Properties/StreamViewType/Value",
+    "value": {
+      "ValueType": "DynamoDBStreamViewType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest/Properties/InstanceType/Value",
+    "value": {
+      "ValueType": "Ec2InstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::EC2Fleet.OnDemandOptionsRequest/Properties/AllocationStrategy/Value",
+    "value": {
+      "ValueType": "Ec2FleetOnDemandAllocationStrategy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::EC2Fleet.SpotOptionsRequest/Properties/AllocationStrategy/Value",
+    "value": {
+      "ValueType": "Ec2FleetSpotAllocationStrategy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::EC2Fleet.SpotOptionsRequest/Properties/InstanceInterruptionBehavior/Value",
+    "value": {
+      "ValueType": "Ec2FleetSpotInterruptionBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest/Properties/DefaultTargetCapacityType/Value",
+    "value": {
+      "ValueType": "Ec2FleetDefaultTargetCapacityType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::Instance.CreditSpecification/Properties/CPUCredits/Value",
+    "value": {
+      "ValueType": "Ec2CpuCredits"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::Instance.ElasticInferenceAccelerator/Properties/Type/Value",
+    "value": {
+      "ValueType": "ElasticInferenceAccelerator"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.BlockDeviceMapping/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.CreditSpecification/Properties/CpuCredits/Value",
+    "value": {
+      "ValueType": "Ec2CpuCredits"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.Ebs/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.InstanceMarketOptions/Properties/MarketType/Value",
+    "value": {
+      "ValueType": "EC2MarketType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.LaunchTemplateData/Properties/InstanceInitiatedShutdownBehavior/Value",
+    "value": {
+      "ValueType": "EC2InstanceInitiatedShutdownBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.LaunchTemplateData/Properties/InstanceType/Value",
+    "value": {
+      "ValueType": "Ec2InstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.Placement/Properties/Tenancy/Value",
+    "value": {
+      "ValueType": "Ec2Tenancy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.SpotOptions/Properties/InstanceInterruptionBehavior/Value",
+    "value": {
+      "ValueType": "EC2SpotInstanceInitiatedShutdownBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.SpotOptions/Properties/SpotInstanceType/Value",
+    "value": {
+      "ValueType": "EC2SpotInstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.EbsBlockDevice/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.SpotFleetRequestConfigData/Properties/AllocationStrategy/Value",
+    "value": {
+      "ValueType": "SpotFleetAllocationStrategy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.SpotFleetRequestConfigData/Properties/ExcessCapacityTerminationPolicy/Value",
+    "value": {
+      "ValueType": "SpotFleetExcessCapacityTerminationPolicy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.SpotFleetRequestConfigData/Properties/InstanceInterruptionBehavior/Value",
+    "value": {
+      "ValueType": "SpotFleetInstanceInterruptionBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.SpotFleetRequestConfigData/Properties/Type/Value",
+    "value": {
+      "ValueType": "SpotFleetType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.SpotFleetLaunchSpecification/Properties/InstanceType/Value",
+    "value": {
+      "ValueType": "Ec2InstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::AutoScaling::LaunchConfiguration.BlockDevice/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeDeploy::DeploymentConfig.MinimumHealthyHosts/Properties/Type/Value",
+    "value": {
+      "ValueType": "CodeDeployConfigMinimumHealthyHostsType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeDeploy::DeploymentGroup.AutoRollbackConfiguration/Properties/Events/Value",
+    "value": {
+      "ValueType": "CodeDeployAutoRollbackConfigurationEvents"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeDeploy::DeploymentGroup.DeploymentStyle/Properties/DeploymentOption/Value",
+    "value": {
+      "ValueType": "CodeDeployDeploymentStyleOption"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeDeploy::DeploymentGroup.DeploymentStyle/Properties/DeploymentType/Value",
+    "value": {
+      "ValueType": "CodeDeployDeploymentStyleType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeDeploy::DeploymentGroup.TriggerConfig/Properties/TriggerEvents/Value",
+    "value": {
+      "ValueType": "CodeDeployTriggerConfigEvent"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Cognito::IdentityPool.CognitoStreams/Properties/StreamingStatus/Value",
+    "value": {
+      "ValueType": "DefaultEnabledState"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Cognito::UserPool.SchemaAttribute/Properties/AttributeDataType/Value",
+    "value": {
+      "ValueType": "CognitoSchemaAttributeDataType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Connection.ConnectionInput/Properties/ConnectionType/Value",
+    "value": {
+      "ValueType": "GlueConnectionInputType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Crawler.SchemaChangePolicy/Properties/DeleteBehavior/Value",
+    "value": {
+      "ValueType": "GlueCrawlerDeleteBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Crawler.SchemaChangePolicy/Properties/UpdateBehavior/Value",
+    "value": {
+      "ValueType": "GlueCrawlerUpdateBehavior"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Table.TableInput/Properties/TableType/Value",
+    "value": {
+      "ValueType": "GlueTableType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Trigger.Predicate/Properties/Logical/Value",
+    "value": {
+      "ValueType": "GlueTriggerPredicateLogical"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Trigger.Condition/Properties/LogicalOperator/Value",
+    "value": {
+      "ValueType": "GlueTriggerPredicateLogicalOperator"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Glue::Trigger.Condition/Properties/State/Value",
+    "value": {
+      "ValueType": "GlueTriggerPredicateState"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::OpsWorks::Layer.VolumeConfiguration/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::OpsWorks::Instance.EbsBlockDevice/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::HealthCheck.HealthCheckConfig/Properties/InsufficientDataHealthStatus/Value",
+    "value": {
+      "ValueType": "Route53HealthCheckConfigHealthStatus"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::HealthCheck.HealthCheckConfig/Properties/Type/Value",
+    "value": {
+      "ValueType": "Route53HealthCheckConfigType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::S3::Bucket.AccelerateConfiguration/Properties/AccelerationStatus/Value",
+    "value": {
+      "ValueType": "S3BucketAccelerationStatus"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::S3::Bucket.RedirectAllRequestsTo/Properties/Protocol/Value",
+    "value": {
+      "ValueType": "HttpProtocol"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::S3::Bucket.ServerSideEncryptionByDefault/Properties/SSEAlgorithm/Value",
+    "value": {
+      "ValueType": "S3BucketSSEAlgorithm"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::S3::Bucket.TopicConfiguration/Properties/Event/Value",
+    "value": {
+      "ValueType": "S3BucketTopicConfigurationEvent"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::S3::Bucket.VersioningConfiguration/Properties/Status/Value",
+    "value": {
+      "ValueType": "S3BucketVersioningConfigurationStatus"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::WAF::Rule.Predicate/Properties/Type/Value",
+    "value": {
+      "ValueType": "PredicateType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::WAFRegional::Rule.Predicate/Properties/Type/Value",
+    "value": {
+      "ValueType": "PredicateType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::Instance.Ebs/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::Instance.SsmAssociation/Properties/DocumentName/Value",
+    "value": {
+      "ValueType": "SsmDocumentName"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.IamInstanceProfile/Properties/Arn/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::LaunchTemplate.IamInstanceProfile/Properties/Name/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SecurityGroup.Egress/Properties/CidrIp/Value",
+    "value": {
+      "ValueType": "CidrIp"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SecurityGroup.Ingress/Properties/CidrIp/Value",
+    "value": {
+      "ValueType": "CidrIp"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.IamInstanceProfileSpecification/Properties/Arn/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::SpotFleet.SpotFleetRequestConfigData/Properties/IamFleetRole/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ElasticBeanstalk::Application.ApplicationResourceLifecycleConfig/Properties/ServiceRole/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::RecordSet.GeoLocation/Properties/ContinentCode/Value",
+    "value": {
+      "ValueType": "RecordSetGeoContinentCode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::RecordSetGroup.GeoLocation/Properties/ContinentCode/Value",
+    "value": {
+      "ValueType": "RecordSetGeoContinentCode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::RecordSetGroup.RecordSet/Properties/Failover/Value",
+    "value": {
+      "ValueType": "RecordSetFailover"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::RecordSetGroup.RecordSet/Properties/Type/Value",
+    "value": {
+      "ValueType": "RecordSetType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::S3::Bucket.ReplicationConfiguration/Properties/Role/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::SES::ReceiptRule.Rule/Properties/TlsPolicy/Value",
+    "value": {
+      "ValueType": "SesReceiptRuleTlsPolicy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ServiceDiscovery::Service.DnsRecord/Properties/Type/Value",
+    "value": {
+      "ValueType": "ServiceDiscoveryDnsType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ServiceDiscovery::Service.HealthCheckConfig/Properties/Type/Value",
+    "value": {
+      "ValueType": "ServiceDiscoveryHealthCheckConfigType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::WorkSpaces::Workspace.WorkspaceProperties/Properties/ComputeTypeName/Value",
+    "value": {
+      "ValueType": "WorkspacePropertyComputeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::WorkSpaces::Workspace.WorkspaceProperties/Properties/RunningMode/Value",
+    "value": {
+      "ValueType": "WorkspacePropertyRunningMode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Authorizer/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Authorizer/Properties/Type/Value",
+    "value": {
+      "ValueType": "ApiGatewayAuthorizerType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::BasePathMapping/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Deployment/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::DocumentationPart/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::DocumentationVersion/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::GatewayResponse/Properties/ResponseType/Value",
+    "value": {
+      "ValueType": "ApiGatewayResponeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::GatewayResponse/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Method/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Model/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::RequestValidator/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Resource/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::RestApi/Properties/ApiKeySourceType/Value",
+    "value": {
+      "ValueType": "ApiGatewatRestApiKeySourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::Stage/Properties/RestApiId/Value",
+    "value": {
+      "ValueType": "RestApiId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApiGateway::UsagePlanKey/Properties/KeyType/Value",
+    "value": {
+      "ValueType": "ApiGatewayUsagePlanKeyType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AppSync::DataSource/Properties/Type/Value",
+    "value": {
+      "ValueType": "AppSyncDataSourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AppSync::GraphQLApi/Properties/AuthenticationType/Value",
+    "value": {
+      "ValueType": "AppSyncGraphQLApiAuthType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AppSync::Resolver/Properties/Kind/Value",
+    "value": {
+      "ValueType": "AppSyncResolverKind"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::AutoScalingGroup/Properties/AvailabilityZones/Value",
+    "value": {
+      "ListValueType": "AvailabilityZones",
+      "ValueType": "AvailabilityZone"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::AutoScalingGroup/Properties/HealthCheckType/Value",
+    "value": {
+      "ValueType": "AutoScalingGroupHealthCheckType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::AutoScalingGroup/Properties/LaunchConfigurationName/Value",
+    "value": {
+      "ValueType": "LaunchConfigurationName"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::AutoScalingGroup/Properties/LoadBalancerNames/Value",
+    "value": {
+      "ListValueType": "LoadBalancerNames",
+      "ValueType": "LoadBalancerName"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::AutoScalingGroup/Properties/TargetGroupARNs/Value",
+    "value": {
+      "ListValueType": "TargetGroupArns",
+      "ValueType": "TargetGroupArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::AutoScalingGroup/Properties/VPCZoneIdentifier/Value",
+    "value": {
+      "ListValueType": "SubnetIds",
+      "ValueType": "SubnetId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LaunchConfiguration/Properties/IamInstanceProfile/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile.NameOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LaunchConfiguration/Properties/ImageId/Value",
+    "value": {
+      "ValueType": "ImageId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LaunchConfiguration/Properties/KeyName/Value",
+    "value": {
+      "ValueType": "KeyPair"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LaunchConfiguration/Properties/PlacementTenancy/Value",
+    "value": {
+      "ValueType": "PlacementTenancy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LaunchConfiguration/Properties/SecurityGroups/Value",
+    "value": {
+      "ListValueType": "SecurityGroups",
+      "ValueType": "SecurityGroup"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Batch::ComputeEnvironment/Properties/ServiceRole/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CertificateManager::Certificate/Properties/ValidationMethod/Value",
+    "value": {
+      "ValueType": "CertificateValidationMethod"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/ComparisonOperator/Value",
+    "value": {
+      "ValueType": "CloudWatchAlarmComparisonOperator"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/AlarmActions/Value",
+    "value": {
+      "ListValueType": "CloudWatchAlarmActions",
+      "ValueType": "CloudWatchAlarmAction"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/Statistic/Value",
+    "value": {
+      "ValueType": "CloudWatchAlarmStatistic"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/TreatMissingData/Value",
+    "value": {
+      "ValueType": "CloudWatchAlarmTreatMissingData"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/Unit/Value",
+    "value": {
+      "ValueType": "CloudWatchAlarmUnit"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CodeBuild::Project/Properties/ServiceRole/Value",
+    "value": {
+      "ValueType": "IamRole.NameOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CodeDeploy::Application/Properties/ComputePlatform/Value",
+    "value": {
+      "ValueType": "CodeDeployApplicationPlatform"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CodePipeline::CustomActionType/Properties/Category/Value",
+    "value": {
+      "ValueType": "CodePipelineActionTypeCategory"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPool/Properties/AliasAttributes/Value",
+    "value": {
+      "ValueType": "CognitoAliasAttributes"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPool/Properties/AutoVerifiedAttributes/Value",
+    "value": {
+      "ValueType": "CognitoAttributes"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPool/Properties/MfaConfiguration/Value",
+    "value": {
+      "ValueType": "CognitoMfaConfiguration"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPool/Properties/UsernameAttributes/Value",
+    "value": {
+      "ValueType": "CognitoAttributes"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPoolClient/Properties/ExplicitAuthFlows/Value",
+    "value": {
+      "ValueType": "CognitoExplicitAuthFlows"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPoolUser/Properties/DesiredDeliveryMediums/Value",
+    "value": {
+      "ValueType": "CognitoDesiredDeliveryMediums"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Cognito::UserPoolUser/Properties/MessageAction/Value",
+    "value": {
+      "ValueType": "CognitoMessageAction"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Config::AggregationAuthorization/Properties/AuthorizedAwsRegion/Value",
+    "value": {
+      "ValueType": "Region"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::CustomerGateway/Properties/Type/Value",
+    "value": {
+      "ValueType": "CustomerGatewayType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::DHCPOptions/Properties/NetbiosNodeType/Value",
+    "value": {
+      "ValueType": "DHCPOptionsNetbiosNodeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DirectoryService::MicrosoftAD/Properties/Edition/Value",
+    "value": {
+      "ValueType": "MicrosoftADEdition"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DirectoryService::SimpleAD/Properties/Size/Value",
+    "value": {
+      "ValueType": "SimpleADSize"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DMS::Endpoint/Properties/EngineName/Value",
+    "value": {
+      "ValueType": "DmsEndpointEngineName"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DMS::Endpoint/Properties/EndpointType/Value",
+    "value": {
+      "ValueType": "DmsEndpointType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DMS::Endpoint/Properties/SslMode/Value",
+    "value": {
+      "ValueType": "DmsEndpointSslMode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DocDB::DBCluster/Properties/EngineVersion/Value",
+    "value": {
+      "ValueType": "DocumentDBEngineVersion"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DocDB::DBInstance/Properties/DBInstanceClass/Value",
+    "value": {
+      "ValueType": "DocumentDBInstanceClass"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DynamoDB::Table/Properties/BillingMode/Value",
+    "value": {
+      "ValueType": "DynamoDBBillingMode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::CapacityReservation/Properties/EndDateType/Value",
+    "value": {
+      "ValueType": "EC2CapacityReservationEndDateType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::CapacityReservation/Properties/InstanceMatchCriteria/Value",
+    "value": {
+      "ValueType": "EC2CapacityReservationInstanceMatchCriteria"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::CapacityReservation/Properties/InstancePlatform/Value",
+    "value": {
+      "ValueType": "EC2CapacityReservationInstancePlatform"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::CapacityReservation/Properties/InstanceType/Value",
+    "value": {
+      "ValueType": "Ec2InstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::CapacityReservation/Properties/Tenancy/Value",
+    "value": {
+      "ValueType": "PlacementTenancy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Volume/Properties/VolumeType/Value",
+    "value": {
+      "ValueType": "EbsVolumeType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::EIP/Properties/Domain/Value",
+    "value": {
+      "ValueType": "Ec2ElasticIpDomain"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::EIPAssociation/Properties/AllocationId/Value",
+    "value": {
+      "ValueType": "AllocationId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::EC2Fleet/Properties/ExcessCapacityTerminationPolicy/Value",
+    "value": {
+      "ValueType": "Ec2FleetExcessCapacityTerminationPolicy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::EC2Fleet/Properties/Type/Value",
+    "value": {
+      "ValueType": "Ec2FleetType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::FlowLog/Properties/LogDestinationType/Value",
+    "value": {
+      "ValueType": "Ec2FlowLogDestinationType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::FlowLog/Properties/ResourceType/Value",
+    "value": {
+      "ValueType": "Ec2FlowLogResourceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::FlowLog/Properties/TrafficType/Value",
+    "value": {
+      "ValueType": "Ec2FlowLogTrafficType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Host/Properties/AvailabilityZone/Value",
+    "value": {
+      "ValueType": "AvailabilityZone"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/Affinity/Value",
+    "value": {
+      "ValueType": "Affinity"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/IamInstanceProfile/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/KeyName/Value",
+    "value": {
+      "ValueType": "KeyPair"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/PlacementGroupName/Value",
+    "value": {
+      "ValueType": "PlacementGroup"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/PrivateIpAddress/Value",
+    "value": {
+      "ValueType": "PrivateIpAddress"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/SecurityGroupIds/Value",
+    "value": {
+      "ListValueType": "SecurityGroupNameOrIds",
+      "ValueType": "SecurityGroupNameOrId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/SecurityGroups/Value",
+    "value": {
+      "ListValueType": "SecurityGroups",
+      "ValueType": "SecurityGroup"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/SubnetId/Value",
+    "value": {
+      "ValueType": "SubnetId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/Tenancy/Value",
+    "value": {
+      "ValueType": "Ec2Tenancy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::NetworkAcl/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::NetworkAclEntry/Properties/CidrBlock/Value",
+    "value": {
+      "ValueType": "CidrIp"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::NetworkAclEntry/Properties/RuleAction/Value",
+    "value": {
+      "ValueType": "NetworkAclRuleAction"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::NetworkAclEntry/Properties/RuleNumber/Value",
+    "value": {
+      "ValueType": "NetworkAclRuleNumber"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::NetworkInterfacePermission/Properties/Permission/Value",
+    "value": {
+      "ValueType": "NetworkInterfacePermission"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::PlacementGroup/Properties/Strategy/Value",
+    "value": {
+      "ValueType": "PlacementGroupStrategy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::RouteTable/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Subnet/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::SubnetCidrBlock/Properties/SubnetId/Value",
+    "value": {
+      "ValueType": "SubnetId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPC/Properties/InstanceTenancy/Value",
+    "value": {
+      "ValueType": "PlacementTenancy"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ECS::Service/Properties/Role/Value",
+    "value": {
+      "ValueType": "IamRole.NameOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EMR::Cluster/Properties/AutoScalingRole/Value",
+    "value": {
+      "ValueType": "IamRole"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EMR::Cluster/Properties/JobFlowRole/Value",
+    "value": {
+      "ValueType": "IamInstanceProfile"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EMR::Cluster/Properties/ServiceRole/Value",
+    "value": {
+      "ValueType": "IamRole"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancingV2::Listener/Properties/Port/Value",
+    "value": {
+      "ValueType": "LoadBalancerPort"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ElasticLoadBalancing::LoadBalancer.Listeners/Properties/InstancePort/Value",
+    "value": {
+      "ValueType": "LoadBalancerPort"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::ElasticLoadBalancing::LoadBalancer.Listeners/Properties/LoadBalancerPort/Value",
+    "value": {
+      "ValueType": "LoadBalancerPort"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancing::LoadBalancer/Properties/AvailabilityZones/Value",
+    "value": {
+      "ListValueType": "AvailabilityZones",
+      "ValueType": "AvailabilityZone"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancing::LoadBalancer/Properties/SecurityGroups/Value",
+    "value": {
+      "ListValueType": "SecurityGroups",
+      "ValueType": "SecurityGroup"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancing::LoadBalancer/Properties/Subnets/Value",
+    "value": {
+      "ListValueType": "SubnetIds",
+      "ValueType": "SubnetId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancingV2::Listener/Properties/LoadBalancerArn/Value",
+    "value": {
+      "ValueType": "LoadBalancerV2Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancingV2::LoadBalancer/Properties/SecurityGroups/Value",
+    "value": {
+      "ListValueType": "SecurityGroupNameOrIds",
+      "ValueType": "SecurityGroupNameOrId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancingV2::LoadBalancer/Properties/Subnets/Value",
+    "value": {
+      "ListValueType": "SubnetIds",
+      "ValueType": "SubnetId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancingV2::TargetGroup/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ElasticLoadBalancingV2::TargetGroup/Properties/HealthCheckTimeoutSeconds/Value",
+    "value": {
+      "ValueType": "TargetGroupHealthCheckTimeoutSeconds"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Events::Rule/Properties/State/Value",
+    "value": {
+      "ValueType": "DefaultEnabledState"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Events::EventBusPolicy/Properties/Action/Value",
+    "value": {
+      "ValueType": "CloudWatchEventBusPolicyAction"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Glue::Crawler/Properties/Role/Value",
+    "value": {
+      "ValueType": "IamRole.NameOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Glue::Job/Properties/Role/Value",
+    "value": {
+      "ValueType": "IamRole.NameOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Glue::Trigger/Properties/Type/Value",
+    "value": {
+      "ValueType": "GlueTriggerType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::KMS::Alias/Properties/TargetKeyId/Value",
+    "value": {
+      "ValueType": "KmsKey.IdOrArn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ECS::TaskDefinition/Properties/ExecutionRoleArn/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Lambda::Function/Properties/Role/Value",
+    "value": {
+      "ValueType": "IamRole.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Lambda::Function/Properties/Runtime/Value",
+    "value": {
+      "ValueType": "LambdaRuntime"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::OpsWorks::UserProfile/Properties/IamUserArn/Value",
+    "value": {
+      "ValueType": "IamUser.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::RDS::Instance/Properties/MonitoringInterval/Value",
+    "value": {
+      "ValueType": "RdsInstanceMonitoringInterval"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::RDS::Instance/Properties/PerformanceInsightsRetentionPeriod/Value",
+    "value": {
+      "ValueType": "PerformanceInsightsRetentionPeriod"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Route53::RecordSet/Properties/Failover/Value",
+    "value": {
+      "ValueType": "RecordSetFailover"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Route53::RecordSet/Properties/Type/Value",
+    "value": {
+      "ValueType": "RecordSetType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Route53Resolver::ResolverEndpoint/Properties/Direction/Value",
+    "value": {
+      "ValueType": "Route53ResolverEndpointDirection"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Route53Resolver::ResolverRule/Properties/RuleType/Value",
+    "value": {
+      "ValueType": "Route53ResolverRuleType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::CodeBuild::Project.VpcConfig/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DirectoryService::MicrosoftAD.VpcSettings/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::DirectoryService::SimpleAD.VpcSettings/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::Route53::HostedZone.VPC/Properties/VPCId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AmazonMQ::Broker/Properties/DeploymentMode/Value",
+    "value": {
+      "ValueType": "AmazonMQDeploymentMode"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AmazonMQ::Broker/Properties/EngineType/Value",
+    "value": {
+      "ValueType": "AmazonMQEngineType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AmazonMQ::Broker/Properties/EngineVersion/Value",
+    "value": {
+      "ValueType": "AmazonMQEngineVersion"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AmazonMQ::Broker/Properties/HostInstanceType/Value",
+    "value": {
+      "ValueType": "AmazonMQHostInstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AmazonMQ::Configuration/Properties/EngineType/Value",
+    "value": {
+      "ValueType": "AmazonMQEngineType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AmazonMQ::Configuration/Properties/EngineVersion/Value",
+    "value": {
+      "ValueType": "AmazonMQEngineVersion"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::ApplicationAutoScaling::ScalingPolicy/Properties/PolicyType/Value",
+    "value": {
+      "ValueType": "ApplicationAutoScalingPolicyType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LaunchConfiguration/Properties/InstanceType/Value",
+    "value": {
+      "ValueType": "Ec2InstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LifecycleHook/Properties/DefaultResult/Value",
+    "value": {
+      "ValueType": "AutoScalingLifecycleHookResult"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::LifecycleHook/Properties/LifecycleTransition/Value",
+    "value": {
+      "ValueType": "AutoScalingLifecycleTransition"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::ScalingPolicy/Properties/AdjustmentType/Value",
+    "value": {
+      "ValueType": "AutoScalingPolicyAdjustmentType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::ScalingPolicy/Properties/MetricAggregationType/Value",
+    "value": {
+      "ValueType": "AutoScalingPolicyMetricAggregationType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::AutoScaling::ScalingPolicy/Properties/PolicyType/Value",
+    "value": {
+      "ValueType": "AutoScalingPolicyType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CodePipeline::Webhook/Properties/Authentication/Value",
+    "value": {
+      "ValueType": "CodePipelineWehbookAuthentication"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DAX::Cluster/Properties/NodeType/Value",
+    "value": {
+      "ValueType": "DAXInstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::EgressOnlyInternetGateway/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Config::ConfigRule/Properties/MaximumExecutionFrequency/Value",
+    "value": {
+      "ValueType": "ConfigFrequency"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::DLM::LifecyclePolicy/Properties/State/Value",
+    "value": {
+      "ValueType": "DefaultEnabledState"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Host/Properties/AutoPlacement/Value",
+    "value": {
+      "ValueType": "Ec2HostAutoPlacement"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::Instance/Properties/InstanceType/Value",
+    "value": {
+      "ValueType": "Ec2InstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::SecurityGroup/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::SecurityGroup/Properties/GroupDescription/Value",
+    "value": {
+      "ValueType": "SecurityGroupDescription"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::SecurityGroupEgress/Properties/CidrIp/Value",
+    "value": {
+      "ValueType": "CidrIp"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::SecurityGroupIngress/Properties/CidrIp/Value",
+    "value": {
+      "ValueType": "CidrIp"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::TransitGateway/Properties/AutoAcceptSharedAttachments/Value",
+    "value": {
+      "ValueType": "TransitGatewayEnabled"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::TransitGateway/Properties/DefaultRouteTableAssociation/Value",
+    "value": {
+      "ValueType": "TransitGatewayEnabled"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::TransitGateway/Properties/DefaultRouteTablePropagation/Value",
+    "value": {
+      "ValueType": "TransitGatewayEnabled"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::TransitGateway/Properties/DnsSupport/Value",
+    "value": {
+      "ValueType": "TransitGatewayEnabled"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::TransitGateway/Properties/VpnEcmpSupport/Value",
+    "value": {
+      "ValueType": "TransitGatewayEnabled"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::TransitGatewayAttachment/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCCidrBlock/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCDHCPOptionsAssociation/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCEndpoint/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCEndpoint/Properties/VpcEndpointType/Value",
+    "value": {
+      "ValueType": "VpcEndpointType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCEndpointConnectionNotification/Properties/ConnectionEvents/Value",
+    "value": {
+      "ValueType": "VpcEndpointConnectionEvents"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCGatewayAttachment/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPCPeeringConnection/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPNConnection/Properties/Type/Value",
+    "value": {
+      "ValueType": "VpnType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::EC2::VPNGateway/Properties/Type/Value",
+    "value": {
+      "ValueType": "VpnType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::GuardDuty::Detector/Properties/FindingPublishingFrequency/Value",
+    "value": {
+      "ValueType": "GuardDutyDetectorFrequency"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::GuardDuty::Filter/Properties/Action/Value",
+    "value": {
+      "ValueType": "GuardDutyFilterAction"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::GuardDuty::IPSet/Properties/Format/Value",
+    "value": {
+      "ValueType": "GuardDutyIPSetFormat"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::GuardDuty::Member/Properties/Status/Value",
+    "value": {
+      "ValueType": "GuardDutyMemberStatus"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::GuardDuty::ThreatIntelSet/Properties/Format/Value",
+    "value": {
+      "ValueType": "GuardDutyThreadIntelSetFormat"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Logs::LogGroup/Properties/LogGroupName/Value",
+    "value": {
+      "ValueType": "CloudWatchLogGroupName"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Logs::LogGroup/Properties/RetentionInDays/Value",
+    "value": {
+      "ValueType": "CloudWatchLogGroupRetention"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Neptune::DBInstance/Properties/DBInstanceClass/Value",
+    "value": {
+      "ValueType": "NeptuneInstanceClass"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::OpsWorks::Stack/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::OpsWorks::Stack/Properties/VpcId/Value",
+    "value": {
+      "ValueType": "VpcId"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Redshift::Cluster/Properties/ClusterType/Value",
+    "value": {
+      "ValueType": "RedshiftClusterType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Redshift::Cluster/Properties/ClusterVersion/Value",
+    "value": {
+      "ValueType": "RedshiftClusterVersion"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::Redshift::Cluster/Properties/NodeType/Value",
+    "value": {
+      "ValueType": "RedshiftInstanceType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::S3::Bucket/Properties/AccessControl/Value",
+    "value": {
+      "ValueType": "S3BucketAccessControl"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::SecretsManager::SecretTargetAttachment/Properties/TargetType/Value",
+    "value": {
+      "ValueType": "SecretsManagerTargetType"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::SNS::Subscription/Properties/Protocol/Value",
+    "value": {
+      "ValueType": "SnsSubscriptionProtocol"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::Role/Properties/ManagedPolicyArns/Value",
+    "value": {
+      "ListValueType": "IamManagedPolicy.Arns",
+      "ValueType": "IamManagedPolicy.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::User/Properties/ManagedPolicyArns/Value",
+    "value": {
+      "ListValueType": "IamManagedPolicy.Arns",
+      "ValueType": "IamManagedPolicy.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::Group/Properties/ManagedPolicyArns/Value",
+    "value": {
+      "ListValueType": "IamManagedPolicy.Arns",
+      "ValueType": "IamManagedPolicy.Arn"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::User/Properties/Groups/Value",
+    "value": {
+      "ListValueType": "IamGroups",
+      "ValueType": "IamGroup"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::InstanceProfile/Properties/Roles/Value",
+    "value": {
+      "ListValueType": "IamInstanceProfileRoles",
+      "ValueType": "IamInstanceProfileRole"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::Role/Properties/AssumeRolePolicyDocument/Value",
+    "value": {
+      "ValueType": "IamAssumeRoleDocument"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::Role/Properties/Path/Value",
+    "value": {
+      "ValueType": "IamPath"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/PropertyTypes/AWS::EC2::Instance.Ebs/Properties/Iops/Value",
+    "value": {
+      "ValueType": "EbsIops"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::ManagedPolicy/Properties/Path/Value",
+    "value": {
+      "ValueType": "IamPath"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::User/Properties/Path/Value",
+    "value": {
+      "ValueType": "IamPath"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::Group/Properties/Path/Value",
+    "value": {
+      "ValueType": "IamPath"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::InstanceProfile/Properties/Path/Value",
+    "value": {
+      "ValueType": "IamPath"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::CodeCommit::Repository/Properties/RepositoryName/Value",
+    "value": {
+      "ValueType": "CodeCommitRepositoryName"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ResourceTypes/AWS::IAM::ManagedPolicy/Properties/PolicyDocument/Value",
+    "value": {
+      "ValueType": "IamManagedPolicyDocument"
+    }
+  }
+]

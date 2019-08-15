@@ -1,0 +1,7 @@
+
+;python:S125"Remove this commented out code.(–Ώβόÿÿÿÿ
+fpython:S101"JRename class "maker" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(ϋέ²ώÿÿÿÿ
+hpython:S100
+"QRename method "createJson" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(¤Σ©Φ
+spython:S117"WRename this local variable "fileDF" to match the regular expression ^[_a-z][a-z0-9_]*$.(ω–εωÿÿÿÿ
+ppython:S117"YRename this local variable "fileJSON" to match the regular expression ^[_a-z][a-z0-9_]*$.(‡Ασ¦

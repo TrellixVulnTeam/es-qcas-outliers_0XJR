@@ -1,0 +1,5 @@
+
+~python:S117J"[Rename this local variable "responseDF" to match the regular expression ^[_a-z][a-z0-9_]*$.(ö¶»àþÿÿÿÿ8žÑƒ‹½-
+fpython:S101"ORename class "test_means" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(¢ƒÉÖ
+~python:S117G"[Rename this local variable "expectedDF" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ã³öýúÿÿÿÿ8Üð—Š½-
+vpython:S117/"ZRename this local variable "payloadDF" to match the regular expression ^[_a-z][a-z0-9_]*$.(›ºßÅøÿÿÿÿ
