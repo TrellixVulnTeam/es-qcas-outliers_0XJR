@@ -25,7 +25,7 @@ cryptography==2.7
 decorator==4.4.0
 docker==4.0.1
 docutils==0.14
-dparse==0.4.1
+dparse==0.5.2
 ecdsa==0.13.2
 entrypoints==0.3
 flake8-polyfill==1.0.2
